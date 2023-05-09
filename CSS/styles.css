@@ -1,1 +1,11 @@
+/* line 1, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
+.grid-container {
+  display: grid;
+}
+
 /*# sourceMappingURL=styles.css.map */

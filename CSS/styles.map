@@ -2,11 +2,11 @@
 	"version": 3,
 	"file": "styles.css",
 	"sources": [
-		"../SASS/styles.sass"
+		"../SASS/styles.scss"
 	],
 	"sourcesContent": [
-		""
+		"*{\n    box-sizing: border-box;\n    }\n\n.grid-container {\n    display: grid;\n}\n\n"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;CACrB;;;AAEL,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;CAChB"
 }
