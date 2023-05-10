@@ -12,3 +12,22 @@
     "main";
 }
 
+.header {
+    grid-area: header;
+    }
+.navigation {
+    grid-area: navigation;
+    }
+.main {
+    grid-area: main;
+    }
+    
+@media (min-width: 768px) {
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "navigation main";
+    }
+    }
+
