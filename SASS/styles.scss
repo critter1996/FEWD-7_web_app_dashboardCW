@@ -16,18 +16,42 @@
     grid-area: header;
     }
 .navigation {
-    grid-area: navigation;
+    grid-area: nav;
     }
 .main {
     grid-area: main;
+    display: grid;
     }
     
+
+.facebook {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Desktop Size
 @media (min-width: 768px) {
     .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas:
     "header header"
-    "navigation main";
+    "nav main";
     }
+
+.main {
+    grid-template-columns: 50%;
+}
+
     }
 
