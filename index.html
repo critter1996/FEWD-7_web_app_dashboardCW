@@ -12,30 +12,41 @@
 <body class="grid-container">
 
 <header>
-    <div class="main-header"> // row
-        <h2 class="headline">Dashboard</h2>
-        <div class="tab"></div>
+
+    <h2 class="banner-top">WebApp</h2>
+
+    <!-- div (to contain the bell icon) -->
+    <div>
+      <!--SVG of bell-->
+
+      
+      <!--container element for notifications-->
+      <div #notifications > 
+         <img src="images/member-1.jpg"  class="current-user">
+         <h4>Student Name</h4>
+      </div>
     </div>
-    <!-- alert banner -->
-    <div class="alert" id="alert" >
-    <!-- JS will insert alert here -->
-    </div>
-    
-    -- h1
-    -- div (to contain the bell icon)
-        -- svg
-        -- div#notifications (container element for our notifications)
-    -- img
-    -- h3 (or similar element)
+
   </header>
 
+  <!--Sidebar Navigation Column-->
   <nav>
-  -- nav (for the sidebar navigation)
-    --a
-      --img
-      </nav>
+    <a></a>
+    <img>
+    <!--svg of home-->
+  </nav>
 
     <main>
+      <div class="main-header"> // row
+        <h2 class="headline">Dashboard</h2>
+        <!--empty div for light gray tab-->
+        <div class="tab"></div>
+      </div>
+          <!-- alert banner  -->
+    <div class="alert" id="alert" >
+      <!-- JS will insert alert here -->
+      </div>
+
       <!--line graph charts-->
       <section class="traffic">
         <div class="traffic-header">
@@ -83,7 +94,9 @@
       <div class="social-container">
         <div class="social-image">
           <!-- inline SVG not included for brevity -->
-
+          <svg class="facebook" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"/>
+          </svg>
         </div>
         
         <div class="social-text">
@@ -176,7 +189,9 @@
     <section class="settings">
       <h3>Settings</h3>
       <!-- custom CSS toggle code-->
+
       <!-- custom CSS toggle code-->
+
       <select class="form-field" id="timezone">
         <option disabled selected>Select a Timezone</option>
         <option>Eastern</option>
