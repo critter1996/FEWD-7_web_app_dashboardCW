@@ -31,12 +31,14 @@
     height: auto;
 }
 
-img {
-    width: 100%;
+.nav-icon {
+    width: 8%;
     height: auto;
 }
 
-
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+    }
 
 
 
@@ -61,5 +63,31 @@ img {
     grid-template-columns: 50%;
 }
 
+.traffic, .social {
+    grid-column: 1 / span 2;
     }
+
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
+        }
+
+        .mobile, .activity, .settings {
+            grid-column: 2 / span 1;
+            }
+
+
+            .widget-container-full {
+                width: 90vw;
+                }
+                .widget-container-half {
+                width: 45vw;
+                }
+
+
+
+
+
+
+
+}
 
