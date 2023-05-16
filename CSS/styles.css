@@ -79,21 +79,4 @@ main {
   }
 }
 
-/* line 14, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-.social-image {
-  width: 10%;
-  height: auto;
-}
-
-/* line 20, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-.nav-icon {
-  width: 100%;
-  height: auto;
-}
-
-/* line 25, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-.widget-container-full, .widget-container-half {
-  width: 95vw;
-}
-
 /*# sourceMappingURL=styles.css.map */
