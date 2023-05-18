@@ -81,8 +81,8 @@
   }
 }
 
-/* line 14, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-input {
+/* line 5, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
+.toggle {
   -webkit-appearance: none;
   position: relative;
   width: 50px;
@@ -94,8 +94,8 @@ input {
   cursor: pointer;
 }
 
-/* line 26, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-input::after {
+/* line 18, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
+.toggle::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -108,13 +108,13 @@ input::after {
   transition: left .3s;
 }
 
-/* line 39, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-input:checked {
+/* line 32, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
+.toggle:checked {
   background-color: #8ddd8d;
 }
 
-/* line 43, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/styles.scss */
-input:checked:after {
+/* line 37, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
+.toggle:checked:after {
   left: 70%;
 }
 
