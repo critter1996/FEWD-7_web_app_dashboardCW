@@ -1,3 +1,5 @@
+//Mobile First 320px
+
 .grid-container {
     display: grid;
     //max-width: 800px; //?
@@ -17,14 +19,16 @@
     }
 .navigation {
     grid-area: navigation;
-    background-color: rgba(80, 30, 137, 0.989);
+    //background-color: rgba(80, 30, 137, 0.989);
+    //grid-column: 1 / span 1;
+    
     }
 .main {
     grid-area: main;
     display: grid;
     }
 
-//Desktop Size
+//Tablet Size
 @media (min-width: 768px) {
     
     .grid-container {
@@ -38,15 +42,15 @@
         grid-template-columns: 50%;
     }
     
-    .traffic, .social {
+    #traffic, .social {
         grid-column: 1 / span 2;
         }
     
-    .daily, .members, .message {
+    .daily, #members, .message {
         grid-column: 1 / span 1;
         }
     
-    .mobile, .activity, .settings {
+    .mobile, .activity, #settings {
         grid-column: 2 / span 1;
         }
     
@@ -65,4 +69,50 @@
     
     
     }
+
+
+
+//Desktop Size
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-rows: 10%;
+        grid-template-areas:
+        "header header"
+        "navigation main";
+        }
+
+
+}
+
+.header {
+    display: grid;
+    //grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
     
+.navigation {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+// header header
+// nav main
+
+
+// traffic graph
+// daily traffic gr - mobile users gr
+// soc f - soc i - soc t
+// new members - recent activity
+// message user - settings 
+
+
+
+
+
+
+
+
+
