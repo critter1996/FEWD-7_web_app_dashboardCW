@@ -26,7 +26,14 @@
 
 /* line 17, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .bell {
-  width: 40px;
+  width: 20px;
+  margin-top: 30px;
+}
+
+/* line 22, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+.current-user {
+  width: 50px;
+  margin-top: 15px;
 }
 
 /* line 3, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
@@ -40,71 +47,23 @@
 /* line 17, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .header {
   grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr .5fr 1fr 2fr;
+  background-color: aqua;
 }
 
-/* line 20, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 23, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .navigation {
   grid-area: navigation;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgba(80, 30, 137, 0.989);
 }
 
-/* line 26, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 31, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .main {
   grid-area: main;
   display: grid;
-}
-
-@media (min-width: 768px) {
-  /* line 34, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas: "header header" "navigation main";
-  }
-  /* line 41, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  main {
-    grid-template-columns: 50%;
-  }
-  /* line 45, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  #traffic, .social {
-    grid-column: 1 / span 2;
-  }
-  /* line 49, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .daily, #members, .message {
-    grid-column: 1 / span 1;
-  }
-  /* line 53, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .mobile, .activity, #settings {
-    grid-column: 2 / span 1;
-  }
-  /* line 58, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .widget-container-full {
-    width: 90vw;
-  }
-  /* line 61, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .widget-container-half {
-    width: 45vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 77, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-  .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-rows: 10%;
-    grid-template-areas: "header header" "navigation main";
-  }
-}
-
-/* line 88, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-/* line 94, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-.navigation {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* line 5, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
