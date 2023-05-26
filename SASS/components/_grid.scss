@@ -17,9 +17,11 @@
 .header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr .5fr 1fr 2fr;
-    background-color: aqua;
+    grid-template-columns: 2fr 1fr .5fr 1fr;
+    background-color: rgb(141, 94, 234);
     }
+
+
 .navigation {
     grid-area: navigation;
     display: grid;
@@ -31,7 +33,37 @@
 .main {
     grid-area: main;
     display: grid;
+    grid-template-rows: 1fr;
     }
+
+.social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: 1px $gray solid;
+    border-radius: 2%;
+    font-size: 18px;
+    background-color: $gray;
+    margin: 15px;
+}
+
+.members-text {
+    margin-left: 30%;
+}
+
+
+.message-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+// .userField {
+
+// }
+
+// .messageField
+
+
 
 // //Tablet Size
 // @media (min-width: 768px) {

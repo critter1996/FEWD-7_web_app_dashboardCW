@@ -6,34 +6,57 @@
   box-sizing: border-box;
 }
 
+/* line 6, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/base/_page.scss */
+.vl {
+  border-left: 3px solid #f3f3f3;
+  height: 65px;
+  position: absolute;
+  left: 57%;
+  margin-left: -3px;
+  top: 0;
+  margin-top: 10px;
+}
+
 /* line 1, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .social-image {
-  width: 10%;
+  width: 30%;
   height: auto;
+  margin-top: 13px;
+  margin-left: 30px;
 }
 
-/* line 7, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 9, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .nav-icon {
-  width: 100%;
+  width: 50%;
   height: auto;
   fill: whitesmoke;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
-/* line 13, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 18, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .widget-container-full, .widget-container-half {
   width: 95vw;
 }
 
-/* line 17, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 22, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .bell {
-  width: 20px;
-  margin-top: 30px;
+  width: 30px;
+  margin-top: 20px;
 }
 
-/* line 22, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 27, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .current-user {
   width: 50px;
   margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* line 34, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+.profile-image {
+  border-radius: 60%;
+  margin-left: 30%;
 }
 
 /* line 3, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
@@ -48,11 +71,11 @@
 .header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 3fr .5fr 1fr 2fr;
-  background-color: aqua;
+  grid-template-columns: 2fr 1fr .5fr 1fr;
+  background-color: #8d5eea;
 }
 
-/* line 23, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 25, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .navigation {
   grid-area: navigation;
   display: grid;
@@ -60,10 +83,34 @@
   background-color: rgba(80, 30, 137, 0.989);
 }
 
-/* line 31, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 33, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .main {
   grid-area: main;
   display: grid;
+  grid-template-rows: 1fr;
+}
+
+/* line 39, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+.social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  border: 1px #f3f3f3 solid;
+  border-radius: 2%;
+  font-size: 18px;
+  background-color: #f3f3f3;
+  margin: 15px;
+}
+
+/* line 50, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+.members-text {
+  margin-left: 30%;
+}
+
+/* line 55, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+.message-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 /* line 5, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
@@ -101,6 +148,11 @@
 /* line 41, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
 .toggle:checked:after {
   left: 70%;
+}
+
+/* line 48, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
+.button-primary {
+  background-color: #8d5eea;
 }
 
 /*# sourceMappingURL=styles.css.map */

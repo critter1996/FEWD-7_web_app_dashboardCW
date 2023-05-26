@@ -1,13 +1,18 @@
 .social-image {
     //display: none;
-    width: 10%;
+    width: 30%;
     height: auto;
+    margin-top: 13px;
+    margin-left: 30px;
 }
 
 .nav-icon {
-    width: 100%;
+    width: 50%;
     height: auto;
     fill: whitesmoke;
+            //margin: 15px;
+            margin-left: 40%;
+            margin-right: 40%;
 }
 
 .widget-container-full, .widget-container-half {
@@ -15,11 +20,18 @@
     }
 
 .bell {
-    width: 20px;
-    margin-top: 30px;
+    width: 30px;
+    margin-top: 20px;
 }
 
 .current-user {
     width: 50px;
     margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.profile-image {
+    border-radius: 60%;
+    margin-left: 30%;
 }

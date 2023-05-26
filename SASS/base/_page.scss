@@ -2,3 +2,13 @@
 *{
     box-sizing: border-box;
     }
+
+    .vl {
+        border-left: 3px solid $gray;
+        height: 65px;
+        position: absolute;
+        left: 57%;
+        margin-left: -3px;
+        top: 0;
+        margin-top: 10px;
+      }
