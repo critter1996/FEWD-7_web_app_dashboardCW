@@ -15,6 +15,9 @@
     "main";
 }
 
+// Header /////////
+
+
 header {
     grid-area: header;
     display: grid;
@@ -24,6 +27,39 @@ header {
     background-color: rgb(141, 94, 234);
     }
 
+
+    .vl {
+        height: 65px;
+        position: absolute;
+        left: 57%;
+        margin-left: -3px;
+        top: 0;
+        margin-top: 3px;
+
+
+        border-left: 3px solid gray;
+      }
+
+    // .header, .nav {
+
+    // }
+
+.banner-top {
+  color: whitesmoke;
+  font-size: 18px;
+  
+}
+
+#tm {
+  font-size: 14px;
+  padding-bottom: 18px;
+}
+
+.top-name {
+  color: whitesmoke;
+}
+
+/////////////Navigation/////////////////
 
 nav {
     grid-area: navigation;
@@ -35,6 +71,8 @@ nav {
     //grid-column: 1 / span 1;
     
     }
+
+////////////Main Section//////////////////
 .main {
     grid-area: main;
     display: grid;
@@ -62,6 +100,11 @@ nav {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+
+
+
+
+
 // .userField {
 
 // }
@@ -70,7 +113,7 @@ nav {
 
 
 
-//Tablet Size
+///////////Tablet Size/////////////////
 @media (min-width: 768px) {
     
     .grid-container {
@@ -79,11 +122,36 @@ nav {
         "header header"
         "navigation main";
         }
-    
+
+        
+/////////////Header//////////////
 header {
     grid-area: header;
 }
 
+//Webapp logo
+.banner-top {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.vl {
+    height: 20px;
+}
+
+.top-name {
+    margin-top: 20px;
+}
+//img on top
+.current-user {
+    margin-top: 3px;
+}
+
+.bell {
+    margin-top: 15px;
+}
+
+///////////Navigation///////////
 nav {
     grid-area: navigation;
     display: grid;
@@ -98,14 +166,7 @@ nav {
     margin-top: 10px;
 }
 
-.banner-top {
-    margin-top: 15px;
-}
-
-.top-name {
-    margin-top: 20px;
-}
-
+////////////Main Section//////////////////////
     main {
         grid-template-columns: 50%;
         margin-left: 20px;
@@ -145,7 +206,7 @@ nav {
 
 
 
-// //Desktop Size
+// ///////////Desktop Size/////////////////////////
 // @media (min-width: 1024px) {
 //     .grid-container {
 //         grid-template-columns: 55px 1fr;
@@ -158,18 +219,24 @@ nav {
 
 // }
 
+/////////////////Header/////////////////
+
 // .header {
 //     display: grid;
 //     //grid-template-rows: 1fr 1fr 1fr;
 //     grid-template-columns: 1fr 1fr 1fr;
 // }
     
+///////////Navigation///////////////////
+
 // .navigation {
 //     display: grid;
 //     width: 100%;
 //     grid-template-columns: 1fr 1fr 1fr 1fr;
 // }
 
+
+////////////////Planning Section/////////////////////
 
 // header header
 // nav main
