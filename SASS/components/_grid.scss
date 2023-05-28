@@ -3,6 +3,7 @@
 .grid-container {
     display: grid;
     //max-width: 800px; //?
+
     grid-template-columns: 100%;
     grid-template-rows: auto;
     //grid-row-gap: 1px;
@@ -14,18 +15,22 @@
     "main";
 }
 
-.header {
+header {
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr 1fr .5fr 1fr;
+    // justify-content: space-between;
+    // align-items: center;
     background-color: rgb(141, 94, 234);
     }
 
 
-.navigation {
+nav {
     grid-area: navigation;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    //grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    //align-items: center;
     background-color: rgba(80, 30, 137, 0.989);
     //grid-column: 1 / span 1;
     
@@ -65,47 +70,78 @@
 
 
 
-// //Tablet Size
-// @media (min-width: 768px) {
+//Tablet Size
+@media (min-width: 768px) {
     
-//     .grid-container {
-//         grid-template-columns: 55px 1fr;
-//         grid-template-areas:
-//         "header header"
-//         "navigation main";
-//         }
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+        "header header"
+        "navigation main";
+        }
     
-//     main {
-//         grid-template-columns: 50%;
-//     }
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navigation;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .03fr .03fr .03fr .03fr;
+
+}
+
+.nav-icon {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.banner-top {
+    margin-top: 15px;
+}
+
+.top-name {
+    margin-top: 20px;
+}
+
+    main {
+        grid-template-columns: 50%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
     
-//     #traffic, .social {
-//         grid-column: 1 / span 2;
-//         }
+    #traffic, .social {
+        grid-column: 1 / span 2;
+        }
     
-//     .daily, #members, .message {
-//         grid-column: 1 / span 1;
-//         }
+    .daily, #members, .message {
+        grid-column: 1 / span 1;
+        }
     
-//     .mobile, .activity, #settings {
-//         grid-column: 2 / span 1;
-//         }
-    
-    
-//     .widget-container-full {
-//         width: 90vw;
-//         }
-//     .widget-container-half {
-//         width: 45vw;
-//         }
+    .mobile, .activity, #settings {
+        grid-column: 2 / span 1;
+        }
     
     
+    .widget-container-full {
+        width: 90vw;
+        }
+    .widget-container-half {
+        width: 45vw;
+        }
+    
+    // .social-container {
+    //     grid-column: 3 / span 1;
+    // }
     
     
     
     
     
-//     }
+    
+    }
 
 
 
