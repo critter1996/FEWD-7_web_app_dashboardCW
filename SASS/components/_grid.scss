@@ -15,7 +15,7 @@
     "main";
 }
 
-// Header /////////
+////////////// Header /////////////////////
 
 
 header {
@@ -25,11 +25,12 @@ header {
     // justify-content: space-between;
     // align-items: center;
     background-color: rgb(141, 94, 234);
+    color: whitesmoke;
     }
 
 
     .vl {
-        height: 65px;
+        height: 55px;
         position: absolute;
         left: 57%;
         margin-left: -3px;
@@ -44,20 +45,17 @@ header {
 
     // }
 
+//WebApp Name
 .banner-top {
-  color: whitesmoke;
   font-size: 18px;
+  margin-top: 11px;
   
 }
 
-#tm {
-  font-size: 14px;
-  padding-bottom: 18px;
+.top-name {
+    margin-top: 15%;
 }
 
-.top-name {
-  color: whitesmoke;
-}
 
 /////////////Navigation/////////////////
 
@@ -69,6 +67,7 @@ nav {
     //align-items: center;
     background-color: rgba(80, 30, 137, 0.989);
     //grid-column: 1 / span 1;
+    padding: 10px;
     
     }
 
@@ -77,6 +76,7 @@ nav {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr;
+    padding: 10px;
     }
 
 .social-container {

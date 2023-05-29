@@ -34,19 +34,19 @@
 /* line 24, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .bell {
   width: 30px;
-  margin-top: 20px;
+  margin-top: 10%;
   fill: whitesmoke;
 }
 
-/* line 30, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 31, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .current-user {
   width: 50px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-right: 20px;
   border-radius: 50%;
 }
 
-/* line 37, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
+/* line 38, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .profile-image {
   border-radius: 60%;
   margin-left: 30%;
@@ -66,11 +66,12 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr .5fr 1fr;
   background-color: #8d5eea;
+  color: whitesmoke;
 }
 
-/* line 31, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 32, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .vl {
-  height: 65px;
+  height: 55px;
   position: absolute;
   left: 57%;
   margin-left: -3px;
@@ -79,36 +80,32 @@ header {
   border-left: 3px solid gray;
 }
 
-/* line 47, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 49, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .banner-top {
-  color: whitesmoke;
   font-size: 18px;
+  margin-top: 11px;
 }
 
-/* line 53, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
-#tm {
-  font-size: 14px;
-  padding-bottom: 18px;
-}
-
-/* line 58, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 55, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .top-name {
-  color: whitesmoke;
+  margin-top: 15%;
 }
 
-/* line 64, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 62, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 nav {
   grid-area: navigation;
   display: flex;
   justify-content: space-between;
   background-color: rgba(80, 30, 137, 0.989);
+  padding: 10px;
 }
 
-/* line 76, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+/* line 75, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
 .main {
   grid-area: main;
   display: grid;
   grid-template-rows: 1fr;
+  padding: 10px;
 }
 
 /* line 82, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
