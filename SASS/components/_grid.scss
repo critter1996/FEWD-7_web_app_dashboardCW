@@ -15,38 +15,33 @@
     "main";
 }
 
-////////////// Header /////////////////////
+////////////// Header-Mobile /////////////////////
 
 
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 2fr 1fr .5fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     // justify-content: space-between;
     // align-items: center;
     background-color: rgb(141, 94, 234);
     color: whitesmoke;
+    padding-left: 8px;
     }
 
 
-    .vl {
-        height: 55px;
-        position: absolute;
-        left: 57%;
-        margin-left: -3px;
-        top: 0;
-        margin-top: 3px;
+.vertical-line {
+    height: 40px;
+    position: absolute;
+    left: 57%;
+    margin-left: -3px;
+    top: 0;
+    margin-top: 2%;
+    border-left: 2px solid $gray;
+    }
 
 
-        border-left: 3px solid gray;
-      }
-
-    // .header, .nav {
-
-    // }
-
-//WebApp Name
-.banner-top {
+.webapp-logo {
   font-size: 18px;
   margin-top: 11px;
   
@@ -57,7 +52,7 @@ header {
 }
 
 
-/////////////Navigation/////////////////
+/////////////Navigation-Mobile/////////////////
 
 nav {
     grid-area: navigation;
@@ -71,7 +66,7 @@ nav {
     
     }
 
-////////////Main Section//////////////////
+////////////Main Section-Mobile//////////////////
 .main {
     grid-area: main;
     display: grid;
@@ -95,23 +90,27 @@ nav {
 }
 
 
+
+
+/////////Message Section-Mobile//////////////
+
 .message-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 
+#userField {
+    background-color: $light-gray;
+}
 
+#messageField {
+    background-color: $light-gray;
+}
 
+////////Settings-Mobile////////////////
 
-
-// .userField {
-
-// }
-
-// .messageField
-
-
+/////////Footer////////////////////////
 
 ///////////Tablet Size/////////////////
 @media (min-width: 768px) {
@@ -124,19 +123,20 @@ nav {
         }
 
         
-/////////////Header//////////////
+/////////////Header-Tablet//////////////
 header {
     grid-area: header;
+    grid-template-columns: 2fr .8fr .5fr 1fr;
 }
 
-//Webapp logo
-.banner-top {
+.webapp-logo {
     margin-top: 10px;
     margin-left: 10px;
 }
 
 .vl {
-    height: 20px;
+    height: 40px;
+    margin-top: 8px;
 }
 
 .top-name {
@@ -151,7 +151,7 @@ header {
     margin-top: 15px;
 }
 
-///////////Navigation///////////
+///////////Navigation-Tablet///////////
 nav {
     grid-area: navigation;
     display: grid;
@@ -166,43 +166,43 @@ nav {
     margin-top: 10px;
 }
 
-////////////Main Section//////////////////////
-    main {
-        grid-template-columns: 50%;
-        margin-left: 20px;
-        margin-top: 10px;
+////////////Main Section-Tablet//////////////////////
+main {
+    grid-template-columns: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#traffic, .social {
+    grid-column: 1 / span 2;
     }
-    
-    #traffic, .social {
-        grid-column: 1 / span 2;
-        }
-    
-    .daily, #members, .message {
-        grid-column: 1 / span 1;
-        }
-    
-    .mobile, .activity, #settings {
-        grid-column: 2 / span 1;
-        }
-    
-    
-    .widget-container-full {
-        width: 90vw;
-        }
-    .widget-container-half {
-        width: 45vw;
-        }
-    
-    // .social-container {
-    //     grid-column: 3 / span 1;
-    // }
-    
-    
-    
-    
-    
-    
+
+.daily, #members, .message {
+    grid-column: 1 / span 1;
     }
+
+.mobile, .activity, #settings {
+    grid-column: 2 / span 1;
+    }
+
+
+.widget-container-full {
+    width: 90vw;
+    }
+.widget-container-half {
+    width: 45vw;
+    }
+
+// .social-container {
+//     grid-column: 3 / span 1;
+// }
+
+
+
+
+
+
+}
 
 
 
@@ -219,7 +219,7 @@ nav {
 
 // }
 
-/////////////////Header/////////////////
+/////////////////Header-Desktop/////////////////
 
 // .header {
 //     display: grid;
@@ -227,7 +227,7 @@ nav {
 //     grid-template-columns: 1fr 1fr 1fr;
 // }
     
-///////////Navigation///////////////////
+///////////Navigation-Desktop///////////////////
 
 // .navigation {
 //     display: grid;
