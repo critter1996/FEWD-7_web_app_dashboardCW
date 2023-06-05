@@ -5,11 +5,12 @@
 .toggle {
     -webkit-appearance: none;
     position: relative;
-    width: 50px;
+    //width: 50px;
+    width: 80px;
     height: 30px;
     border-radius: 25px;
     background-color: #ccc;
-    transition: background .3s;
+    transition: background-color .3s;
     outline: none;
     cursor: pointer;
 }
