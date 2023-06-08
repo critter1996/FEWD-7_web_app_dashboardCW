@@ -24,7 +24,7 @@ header {
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr .5fr .2fr 2fr;
-    background-color: rgb(141, 94, 234);
+    background-color: $main-accent;
     color: whitesmoke;
     height: 80px;
     }
@@ -122,6 +122,32 @@ main {
     // width: 60%;
 }
 
+//Long gray Dividing line
+#traffic,
+.daily,
+.mobile,
+.social-container-full,
+#members,
+.activity,
+.message {
+    border-bottom: 2px lightgrey solid;
+}
+
+//Short gray dividing line
+.members-container,
+.members-activity {
+    border-bottom: lightgray solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
 .social-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -146,12 +172,33 @@ main {
     font-size: 40px;
 }
 
-.members-text {
-    margin-left: 30%;
+
+
+/////Members Section-mobile
+
+.members-container,
+.members-activity {
+    margin-top: 15px;
+
+}
+
+.members-text, 
+.members-activity p {
+    //margin-left: 30%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.members-text a {
+    color: $main-accent;
 }
 
 
+//////////Activity Section-Mobile///////////
 
+// .members-activity p {
+//     text-align: center;
+// }
 
 /////////Message Section-Mobile//////////////
 
