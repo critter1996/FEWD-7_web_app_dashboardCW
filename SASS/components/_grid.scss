@@ -95,8 +95,32 @@ main {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr;
-    padding: 10px;
+    padding-left: 10px;
     }
+
+//Tab and dashboard
+.main-header {
+    //display: flex;
+    height: 80px;
+    //margin-top: -10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.headline {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#tab {
+    background-color: rgb(226, 224, 224);
+    //-ms-flex-align: end;
+    //padding: 10px;
+    border: 1px gray solid;
+    // margin-left: 50px;
+    // width: 60%;
+}
 
 .social-container {
     display: grid;
