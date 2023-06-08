@@ -128,9 +128,22 @@ main {
     grid-template-rows: auto;
     border: 1px $gray solid;
     border-radius: 2%;
-    font-size: 18px;
     background-color: $gray;
-    margin: 15px;
+    margin: 15px
+}
+
+.social-text {
+    margin-top: 10px;
+}
+
+.st-top {
+    font-size: 18px;
+    color: $main-accent;
+    font-weight: 600;
+}
+
+.st-number {
+    font-size: 40px;
 }
 
 .members-text {
