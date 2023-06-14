@@ -1,4 +1,10 @@
-
+.toggle,
+.button-primary,
+#timezone
+#cancel
+ {
+    cursor: pointer;
+}
     
 //toggle buttons
 //input
@@ -32,10 +38,6 @@
 //input
 .toggle:checked {
     background-color: rgb(142, 24, 245);
-    
-   // rgb(191, 94, 203);
-
-    //rgb(141, 221, 141);
 }
 
 //input
@@ -48,5 +50,51 @@
 //Save and Send
 .button-primary {
     background-color: $main-accent;
+    color: $white;
+    border-radius: 8px;
+    border: none;
 }
 
+#send {
+    height: 50px;
+    font-size: 18px;
+    
+}
+
+#save,
+#cancel {
+    height: 50px;
+    width: 30%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#cancel {
+    border-radius: 8px;
+    border: none;
+    background-color: #847c7c;
+    color: $white;
+    margin-left: 140px;
+}
+
+// #save {
+//     margin-right: 15px;
+// }
+
+#timezone {
+    border: $border-gray 1px solid;
+    margin-top: 15px;
+    padding: 15px;
+    
+}
+
+.b2t {
+    border: 1px solid $main-accent;
+    width: 80px;
+    background-color: $main-accent;
+
+    background-color: $main-accent;
+    color: $white;
+    border-radius: 8px;
+    border: none;
+}
