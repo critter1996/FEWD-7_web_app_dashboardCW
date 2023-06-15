@@ -11,9 +11,9 @@
     width: 40%;
     height: auto;
     fill: whitesmoke;
-            //margin: 15px;
-            margin-left: 40%;
-            margin-right: 40%;
+    //margin: 15px;
+    margin-left: 40%;
+    margin-right: 40%;
 
 }
 
@@ -40,4 +40,37 @@
     width: 60px;
     border-radius: 60%;
     margin-left: 45%;
+}
+
+
+@media (min-width: 768px) {
+
+//img on top
+.current-user {
+    margin-bottom: 8px;
+    width: 45px;
+}
+
+.bell {
+    margin-left: 90%;
+    width: 25px;
+    margin-top: 20px;
+
+}
+//mobile
+// .bell {
+//     width: 30px;
+//     margin-top: 25px;
+//     fill: whitesmoke;
+// }
+
+.nav-icon {
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+
+
+
 }
