@@ -79,9 +79,9 @@ header {
 
 
 ////////////////////Tab and dashboard
-.main-header {
+.main-header { 
     grid-area: dashboard;
-    //display: flex;
+    display: flex;
     height: 80px;
     //margin-top: -10px;
     display: grid;
@@ -335,7 +335,6 @@ main {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
         "header header"
-        "navigation dashboard"
         "navigation main"
         "navigation footer";
         }
