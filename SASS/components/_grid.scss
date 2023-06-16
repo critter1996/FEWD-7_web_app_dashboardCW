@@ -346,6 +346,7 @@ header {
     grid-area: header;
     grid-template-columns: 2fr .5fr .3fr 1fr;
     height: 70px;
+    
 }
 
 //mobile
@@ -357,15 +358,19 @@ header {
 //     }
 
 
-.vl {
+.vertical-line {
     height: 40px;
-    margin-top: 8px;
+    //margin-top: 10px;
+    margin-left: 20px;
 }
 
 .top-name {
     margin-top: 10px;
 }
 
+// #bell {
+//     margin-left: 90px;
+// }
 
 ///////////Navigation-Tablet///////////
 nav {
@@ -378,10 +383,31 @@ nav {
 
 
 ////////////Main Section-Tablet//////////////////////
+
+.headline {
+    padding: 10px;
+    //margin-left: 10px;
+}
+
+////////////////////Tab and dashboard
+// .main-header {
+
+    
+// }
+
+// grid-area: dashboard;
+// //display: flex;
+// height: 80px;
+// //margin-top: -10px;
+// display: grid;
+// grid-template-columns: 1fr 2fr;
+
 main {
     grid-template-columns: 50%;
     margin-left: 20px;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 // .main-header {
@@ -399,15 +425,18 @@ main {
 // }
 
 
-// .headline {
-//     margin-left: 10px;
-//     margin-top: 20px;
-// }
+.headline {
+    //margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
 
 #tab {
     grid-column: 2 / span 2;
     //margin-left: 15px;
    // width: 90%;
+    height: 60px;
+    margin-left: -80px;
 }
 
 
@@ -418,14 +447,15 @@ main {
 // }
 
 
-.alert {
-    grid-row: 2 / span 2;
-    margin-top: 15px;
-}
+// .alert {
+//     grid-row: 2 / span 2;
+//     margin-top: 15px;
+// }
 
 #traffic, .social {
     grid-column: 1 / span 2;
-    }
+    margin-left: 20%;
+}
 
 .daily, #members, .message {
     grid-column: 1 / span 1;
