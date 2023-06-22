@@ -384,23 +384,6 @@ nav {
 
 ////////////Main Section-Tablet//////////////////////
 
-.headline {
-    padding: 10px;
-    //margin-left: 10px;
-}
-
-////////////////////Tab and dashboard
-// .main-header {
-
-    
-// }
-
-// grid-area: dashboard;
-// //display: flex;
-// height: 80px;
-// //margin-top: -10px;
-// display: grid;
-// grid-template-columns: 1fr 2fr;
 
 main {
     grid-template-columns: 50%;
@@ -410,25 +393,14 @@ main {
     padding-right: 10px;
 }
 
-// .main-header {
-//     display: grid;
-//    // grid-template-columns: 1fr 3fr;
-//     width: 90%;
-// }
 
-//Tab and dashboard
-// .main-header {
-//     height: 80px;
-//     display: grid;
-//     grid-template-columns: 1fr 2fr;
-    
-// }
-
-
+//"Dashboard" on tab
 .headline {
     //margin-left: 10px;
     margin-top: 10px;
     font-size: 20px;
+    padding: 10px;
+    //margin-left: 10px;
 }
 
 #tab {
@@ -440,27 +412,48 @@ main {
 }
 
 
-// #tab {
-//     background-color: rgb(226, 224, 224);
-//     border: 1px gray solid;
-//     // width: 60%;
-// }
 
-
-// .alert {
-//     grid-row: 2 / span 2;
-//     margin-top: 15px;
-// }
-
-#traffic, .social {
-    grid-column: 1 / span 2;
-    margin-left: 20%;
+.alert {
+    grid-row: 1 / span 2;
+    margin-top: 15px;
 }
 
+//Top Charts Daily Traffic and Mobile Users
+.daily,
+.mobile {
+    border: 1px lightgray solid;
+}
+
+//All 3 social media boxes, no header
+.social-container-full {
+    display: flex;
+    grid-column: 1 / span 2;
+}
+
+//each individual FB/INS/TW Box
+// .social-container {
+//     //display: flex;
+//     //width: 200px;
+//    //grid-column: 2 / span 2;
+// }
+
+//Social Media Entire Section
+#stats-section {
+    grid-column: 1 / span 2;
+}
+
+//Top Traffic line graph (NOT daily)
+#traffic {
+    grid-column: 1 / span 2;
+    //margin-left: 20%;
+}
+
+//Daily traffic graph, New Members, Messages
 .daily, #members, .message {
     grid-column: 1 / span 1;
     }
 
+//Mobile Users Graph, Recent Activity, Settings
 .mobile, .activity, #settings {
     grid-column: 2 / span 1;
     }
@@ -473,12 +466,19 @@ main {
     width: 45vw;
     }
 
-.social-container {
-    grid-column: 3 / span 1;
+// .social-container {
+//     grid-column: 3 / span 1;
+// }
+
+
+////Settings///
+
+#check1 {
+    padding-bottom: 10px;
 }
-
-
-
+#check2 {
+    padding-bottom: 20px;
+}
 
 
 
