@@ -346,7 +346,7 @@ main {
 /////////////Header-Tablet//////////////
 header {
     grid-area: header;
-    grid-template-columns: 2fr .5fr .3fr 1fr;
+   // grid-template-columns: 2fr .5fr .3fr 1fr;
     height: 70px;
     
 }
@@ -355,7 +355,7 @@ header {
 .vertical-line {
     height: 40px;
     //margin-top: 10px;
-    margin-left: 20px;
+    //margin-left: 20px;
 }
 
 .top-name {
@@ -381,10 +381,10 @@ nav {
 
 main {
     grid-template-columns: 50%;
-    margin-left: 20px;
+    //margin-left: 20px;
     margin-top: 10px;
-    padding-left: 10px;
-    margin-right: 20px;
+    //padding-left: 10px;
+    //margin-right: 20px;
     //padding-right: 40px;
 }
 
@@ -403,7 +403,7 @@ main {
     //margin-left: 15px;
    // width: 90%;
     height: 60px;
-    margin-left: -80px;
+    //margin-left: -80px;
 }
 
 
@@ -471,16 +471,16 @@ main {
 
 
 //New Members
-.members-container {
-   // display: flex;
-    //flex-direction: column;
+// .members-container {
+//    // display: flex;
+//     //flex-direction: column;
 
-}
+// }
 
 .profile-image {
     //align-self: flex-start;
-    margin-right: 75%;
-    margin-left: 0%;
+    //margin-right: 75%;
+    //margin-left: 0%;
     margin-top: 20px;
     margin-bottom: 20px;
 
