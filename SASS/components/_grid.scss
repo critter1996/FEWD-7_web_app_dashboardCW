@@ -360,11 +360,18 @@ header {
 
 .top-name {
     margin-top: 10px;
+    margin-left: -4px;
+    font-size: 14px;
+    padding-right: 5px;
 }
 
-// #bell {
-//     margin-left: 90px;
-// }
+.bell-svg {
+    margin-top: 5px;
+}
+
+#notifications {
+    padding-right: 10px;
+}
 
 ///////////Navigation-Tablet///////////
 nav {
@@ -419,27 +426,59 @@ main {
     border: 1px lightgray solid;
 }
 
+
+#traffic {
+    padding-left: 15px;
+}
+
+.traffic-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
 //All 3 social media boxes, no header
 .social-container-full {
     display: flex;
     grid-column: 1 / span 2;
     //align-items: center;
-    justify-content: space-around;
-    //margin-left: -20px;
-    flex: 1;
-    margin: 2px;
+    //justify-content: space-between;
+    width: 90vw;
 }
 
 //each individual FB/INS/TW Box
 .social-container {
-    //display: flex;
-    //width: 100px;
+   width: 60vw;
    border: 3px $light-gray solid;
+   margin-left: 2px;
 }
+
+//each individual social svg
+.social-image {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-self: center;
+    //background-color: $main-accent;
+    //fill: $gray;
+   // border-radius: 50%;
+}
+
+// .social-image svg {
+//     border-radius: 50%;
+// }
+
+.social-text {
+    padding: 10px;
+}
+
+// .st-number {
+//     grid-area: number;
+// }
 
 //Social Media Entire Section
 #stats-section {
     grid-column: 1 / span 2;
+    
 }
 
 //Top Traffic line graph (NOT daily), 
