@@ -436,6 +436,8 @@ main {
     justify-content: space-around;
 }
 
+///////////SOCIAL SECTION/////////////////
+
 //All 3 social media boxes, no header
 .social-container-full {
     display: flex;
@@ -463,10 +465,6 @@ main {
    // border-radius: 50%;
 }
 
-// .social-image svg {
-//     border-radius: 50%;
-// }
-
 .social-text {
     padding: 10px;
 }
@@ -478,8 +476,16 @@ main {
 //Social Media Entire Section
 #stats-section {
     grid-column: 1 / span 2;
-    
 }
+
+//////////////////////////////////////////
+
+
+
+
+
+/////////////LAYOUT SECTION//////////////////
+
 
 //Top Traffic line graph (NOT daily), 
 //New Members, Messages,
@@ -507,37 +513,60 @@ main {
     width: 45vw;
     }
 
+///////////////////////////////////////////////
 
 
+
+
+
+//////////////Members Section////////////////////
 //New Members
-// .members-container {
-//    // display: flex;
-//     //flex-direction: column;
+.members-container {
+    display: flex;
+    //flex-direction: column;
+    //display: grid;
+    //grid-template-rows: 1fr;
+    // grid-template-areas: 
+    // profile text date;
 
-// }
+}
 
 .profile-image {
     //align-self: flex-start;
     //margin-right: 75%;
     //margin-left: 0%;
+    //grid-area: profile;
     margin-top: 20px;
     margin-bottom: 20px;
 
 
 }
 
+// .members-text {
+//     //display: flex;
+//     text-align: left;
+// }
+
+
+
 // .members-text-tab {
-//     margin-left: 10px;
+//    // margin-left: 10px;
+//    //align-self: flex-start;
+//    //text-align: start;
+//    //margin-left: -300px;
+//    //grid-area: text;
 // }
 
-// #date {
-//     //align-self: flex-end;
-//     //margin-left: 75%;
-// }
+#date {
+    //align-self: flex-end;
+    margin-left: 75%;
+    //text-align: end;
+    //grid-area: date;
+}
 
+////////////////////////////////////////////
 
-
-////Settings///
+//////////////////Settings//////////////////
 
 #check1 {
     padding-bottom: 10px;
@@ -546,11 +575,9 @@ main {
     padding-bottom: 20px;
 }
 
-
-
 }
 
-
+/////////////////////////////////////////
 
 // ///////////Desktop Size/////////////////////////
 // @media (min-width: 1024px) {
