@@ -574,16 +574,59 @@ main {
     //text-align: right;
 }
 
+//Members Activity////////
+.members-activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 85vw;
+    //justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.members-activity p {
+    text-align: left;
+}
+
 ////////////////////////////////////////////
 
 //////////////////Settings//////////////////
 
-#check1 {
-    padding-bottom: 10px;
+#toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
-#check2 {
-    padding-bottom: 20px;
+
+
+
+#toggle input {
+    margin-right: auto;
 }
+
+// .toggle {
+//     align-self: center;
+//     margin-left: auto;
+// }
+
+// #check1 {
+//     padding-bottom: 10px;
+// }
+
+#box1 {
+    margin-left: 10%;
+}
+
+#box2 {
+    margin-left: 15%;
+}
+
+// #check2 {
+//     padding-bottom: 20px;
+// }
 
 }
 
