@@ -184,12 +184,22 @@ main {
 
 .members-container,
 .members-activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 15px;
-
 }
 
+#date {
+    //text-align: center;
+    //align-self: center;
+    margin-top: auto;
+}
+
+
 .members-text, 
-.members-activity p {
+.members-activity p,
+#date {
     text-align: center;
     margin-bottom: 15px;
 }
@@ -520,48 +530,48 @@ main {
 
 
 //////////////Members Section////////////////////
+
+// align the three elements by giving
+// the parent container members-container
+// the correct flex-direction and use a width,
+// min- or/and max-width or flex-basis and
+// flex-grow to position the elements.
+
+
 //New Members
 .members-container {
     display: flex;
-    //flex-direction: column;
-    //display: grid;
-    //grid-template-rows: 1fr;
-    // grid-template-areas: 
-    // profile text date;
-
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 85vw;
+    //justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+    padding-bottom: 10px;
 }
 
-.profile-image {
-    //align-self: flex-start;
-    //margin-right: 75%;
-    //margin-left: 0%;
-    //grid-area: profile;
-    margin-top: 20px;
-    margin-bottom: 20px;
+// .profile-image {
+//     //align-self: flex-start;
+//     //margin-right: 75%;
+//     //margin-left: 0%;
+//     //grid-area: profile;
+//     // margin-top: 20px;
+//     // margin-bottom: 20px;
+//     flex-basis: 
 
 
+// }
+
+.members-text {
+    text-align: left;
 }
 
-// .members-text {
-//     //display: flex;
-//     text-align: left;
-// }
 
-
-
-// .members-text-tab {
-//    // margin-left: 10px;
-//    //align-self: flex-start;
-//    //text-align: start;
-//    //margin-left: -300px;
-//    //grid-area: text;
-// }
 
 #date {
-    //align-self: flex-end;
-    margin-left: 75%;
-    //text-align: end;
-    //grid-area: date;
+    margin-left: auto;
+    //text-align: right;
 }
 
 ////////////////////////////////////////////
