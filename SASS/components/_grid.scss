@@ -1,5 +1,4 @@
-//Mobile First 320px
-
+////////////////Mobile First 320px////////////////////////
 
 .grid-container {
     display: grid;
@@ -19,40 +18,35 @@
 
 header {
     grid-area: header;
-    // display: grid;
-    // grid-template-columns: 2fr .5fr .2fr 2fr;
-
     display: flex;
     justify-content: space-between;
-
     background-color: $main-accent;
     color: whitesmoke;
     height: 80px;
-    }
+}
 
+#top-info {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+}
 
 .webapp-logo {
     font-size: 24px;
     margin-top: 15px;
     padding-left: 10px;
-    justify-self: flex-start;
-    
-  }
+    justify-self: flex-start; 
+}
 
 
 .vertical-line {
     height: 40px;
-    //position: absolute;
-    //left: 57%;
-    //margin-left: -3px;
     top: 0;
     margin-top: 15px;
     border-left: 1px solid $gray;
     position: relative;
-
     justify-self: center;
-
-    }
+}
 
 //bell-svg in images file
 
@@ -70,32 +64,20 @@ header {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
-
     justify-self: center;
-
-    //width: 70px;
-   // height: 1%;
     margin-top: 15px;
-    //margin-left: 5px;
-    
-
 }
-
-
 
 .top-name {
-    //margin-left: 10px;
     margin-top: 15px;
 }
 
 
 
-////////////////////Tab and dashboard
+////////////////////Tab and dashboard//////////////////////////
 .main-header {
     grid-area: dashboard;
-    //display: flex;
     height: 80px;
-    //margin-top: -10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     
@@ -112,7 +94,7 @@ header {
 }
 
 
-/////////////Navigation-Mobile/////////////////
+///////////////////////Navigation-Mobile////////////////////
 
 nav {
     grid-area: navigation;
@@ -120,15 +102,15 @@ nav {
     justify-content: space-between;
     background-color: rgba(80, 30, 137, 0.989);
     padding: 10px;
-    }
+}
 
-////////////Main Section-Mobile//////////////////
+/////////////////////////Main Section-Mobile//////////////////
 main {
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
     margin-left: 10px;
-    }
+}
 
 
 
@@ -150,9 +132,6 @@ main {
 .members-activity {
     border-bottom: lightgray solid 1px;
 }
-
-
-
 
 .social-container {
     display: grid;
@@ -178,9 +157,7 @@ main {
     font-size: 40px;
 }
 
-
-
-/////Members Section-mobile
+////////////////////////Members Section-mobile///////////////////////
 
 .members-container,
 .members-activity {
@@ -191,8 +168,6 @@ main {
 }
 
 #date {
-    //text-align: center;
-    //align-self: center;
     margin-top: auto;
 }
 
@@ -211,25 +186,14 @@ main {
 
 //////////Activity Section-Mobile///////////
 
-// .members-activity p {
-//     text-align: center;
-// }
 
 /////////Message Section-Mobile//////////////
 
-// .message-container {
-//     display: grid;
-//     grid-template-rows: 1fr 1fr 1fr 1fr;
-// }
-
-
 .message,
 #settings {
-    //display: flex;
     padding-top: 10px;
     padding-bottom: 20px;
     margin-left: 10px;
-   // height: 80px;
 }
 
 #userField,
@@ -257,43 +221,11 @@ main {
     width: 90%;
 }
 
-////////Settings-Mobile////////////////
-
-// .settings-button {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-    
-// }
-
+////////////////////////Settings Mobile/////////////////////
 
 #settings {
     margin-left: 10px;
 }
-
-
-// #settings {
-//     display: grid;
-//     //grid-template-columns: 2fr 1fr;
-//     grid-template-areas:
-//     "email button1"
-//     "public button2"
-//     "timezone"
-//     "save cancel";
-// }
-
-// .set-email {
-//     grid-area: email;
-// }
-
-// #box1 {
-
-// }
-
-
-
-
-//Settings
 
 #check1 {
     padding-bottom: 10px;
@@ -320,16 +252,8 @@ main {
     // text-align: 
 }
 
-// #select {
-//     margin-left: 20%;
-//     margin-top: 5%;
-// }
 
-
-
-
-
-/////////Footer-Mobile////////////////////////
+//////////////////////////Footer-Mobile////////////////////////
 
 #b2t {
     grid-area: footer;
@@ -340,7 +264,7 @@ main {
     //text-align: center;
 }
 
-///////////Tablet Size/////////////////
+///////////////////////Tablet Size///////////////////////
 @media (min-width: 768px) {
     
     .grid-container {
@@ -350,22 +274,17 @@ main {
         "navigation dashboard"
         "navigation main"
         "navigation footer";
-        }
-
-        
-/////////////Header-Tablet//////////////
-header {
-    grid-area: header;
-   // grid-template-columns: 2fr .5fr .3fr 1fr;
-    height: 70px;
-    
 }
 
+        
+/////////////////////////Header-Tablet////////////////////////
+header {
+    grid-area: header;
+    height: 70px;  
+}
 
 .vertical-line {
     height: 40px;
-    //margin-top: 10px;
-    //margin-left: 20px;
 }
 
 .top-name {
@@ -383,47 +302,31 @@ header {
     padding-right: 10px;
 }
 
-///////////Navigation-Tablet///////////
+///////////////////Navigation-Tablet////////////////////////////
 nav {
     grid-area: navigation;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .03fr .03fr .03fr .03fr;
-
 }
 
-
-////////////Main Section-Tablet//////////////////////
-
-
+///////////////////Main Section-Tablet//////////////////////
 main {
     grid-template-columns: 50%;
-    //margin-left: 20px;
     margin-top: 10px;
-    //padding-left: 10px;
-    //margin-right: 20px;
-    //padding-right: 40px;
 }
-
 
 //"Dashboard" on tab
 .headline {
-    //margin-left: 10px;
     margin-top: 10px;
     font-size: 20px;
     padding: 10px;
-    //margin-left: 10px;
 }
 
 #tab {
     grid-column: 2 / span 2;
-    //margin-left: 15px;
-   // width: 90%;
     height: 60px;
-    //margin-left: -80px;
 }
-
-
 
 .alert {
     grid-row: 1 / span 2;
@@ -452,8 +355,6 @@ main {
 .social-container-full {
     display: flex;
     grid-column: 1 / span 2;
-    //align-items: center;
-    //justify-content: space-between;
     width: 90vw;
 }
 
@@ -470,28 +371,16 @@ main {
     margin-right: 10px;
     margin-left: 10px;
     align-self: center;
-    //background-color: $main-accent;
-    //fill: $gray;
-   // border-radius: 50%;
 }
 
 .social-text {
     padding: 10px;
 }
 
-// .st-number {
-//     grid-area: number;
-// }
-
 //Social Media Entire Section
 #stats-section {
     grid-column: 1 / span 2;
 }
-
-//////////////////////////////////////////
-
-
-
 
 
 /////////////LAYOUT SECTION//////////////////
@@ -502,85 +391,52 @@ main {
 // Recent Activity, Settings
 .alert, #traffic, #members, .activity, .message,  #settings {
     grid-column: 1 / span 2;
-    //margin-left: 20%;
 }
 
 //Daily traffic graph
 .daily  {
     grid-column: 1 / span 1;
-    }
+}
 
 //Mobile Users Graph
 .mobile  {
     grid-column: 2 / span 1;
-    }
+}
 
 
 .widget-container-full {
     width: 90vw;
-    }
+}
 .widget-container-half {
     width: 45vw;
-    }
+}
 
-///////////////////////////////////////////////
-
-
-
-
-
-//////////////Members Section////////////////////
-
-// align the three elements by giving
-// the parent container members-container
-// the correct flex-direction and use a width,
-// min- or/and max-width or flex-basis and
-// flex-grow to position the elements.
-
-
-//New Members
+/////////////////New Members Tablet///////////////////////
 .members-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 85vw;
-    //justify-content: flex-start;
     align-items: center;
     gap: 20px;
     text-align: right;
     padding-bottom: 10px;
 }
 
-// .profile-image {
-//     //align-self: flex-start;
-//     //margin-right: 75%;
-//     //margin-left: 0%;
-//     //grid-area: profile;
-//     // margin-top: 20px;
-//     // margin-bottom: 20px;
-//     flex-basis: 
-
-
-// }
-
 .members-text {
     text-align: left;
 }
 
-
-
 #date {
     margin-left: auto;
-    //text-align: right;
 }
 
-//Members Activity////////
+/////////////////Activity Tablet///////////////////////
 .members-activity {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 85vw;
-    //justify-content: flex-start;
     align-items: center;
     gap: 20px;
     text-align: right;
@@ -591,9 +447,8 @@ main {
     text-align: left;
 }
 
-////////////////////////////////////////////
 
-//////////////////Settings//////////////////
+//////////////////Settings Tablet//////////////////////
 
 #toggle {
     display: flex;
@@ -601,20 +456,9 @@ main {
     justify-content: flex-start;
 }
 
-
-
 #toggle input {
     margin-right: auto;
 }
-
-// .toggle {
-//     align-self: center;
-//     margin-left: auto;
-// }
-
-// #check1 {
-//     padding-bottom: 10px;
-// }
 
 #box1 {
     margin-left: 10%;
@@ -623,57 +467,43 @@ main {
 #box2 {
     margin-left: 15%;
 }
-
-// #check2 {
-//     padding-bottom: 20px;
-// }
-
 }
-
-/////////////////////////////////////////
+////////////////END OF TABLET/////////////////////////
 
 // ///////////Desktop Size/////////////////////////
-// @media (min-width: 1024px) {
-//     .grid-container {
-//         grid-template-columns: 55px 1fr;
-//         grid-template-rows: 10%;
-//         grid-template-areas:
-//         "header header"
-//         "navigation main"
-            // "navigation footer";
-//         }
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+        "header header"
+        "navigation dashboard"
+        "navigation main"
+        "navigation footer";
+}
 
-
-// }
 
 /////////////////Header-Desktop/////////////////
 
-// .header {
-//     display: grid;
-//     //grid-template-rows: 1fr 1fr 1fr;
-//     grid-template-columns: 1fr 1fr 1fr;
-// }
-    
-///////////Navigation-Desktop///////////////////
+#top-info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
 
-// .navigation {
-//     display: grid;
-//     width: 100%;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-// }
+ 
+///////////Dashboard-Desktop///////////////////
 
+.headline {
+    margin-left: auto;
+    padding: 12px;
+}
 
-////////////////Planning Section/////////////////////
+#tab {
+    width: 85vw;
+    height: 70px;
+}
 
-// header header
-// nav main
-
-
-// traffic graph
-// daily traffic gr - mobile users gr
-// soc f - soc i - soc t
-// new members - recent activity
-// message user - settings 
+////////////////Social Section Desktop////////////////////////
 
 
 
@@ -683,3 +513,20 @@ main {
 
 
 
+
+
+////////////////Members Section Desktop/////////////////////
+
+////////////////Activity Section Desktop/////////////////////
+
+////////////////Message Section Desktop/////////////////////
+
+////////////////Settings Section Desktop/////////////////////
+
+
+////////////////Footer Section Desktop/////////////////////
+
+
+
+///////////////////////////END Of Desktop//////////////////
+}
