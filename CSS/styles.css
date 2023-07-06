@@ -508,21 +508,55 @@ main {
     grid-template-columns: 55px 1fr;
     grid-template-areas: "header header" "navigation dashboard" "navigation main" "navigation footer";
   }
-  /* line 487, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  /* line 492, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
   #top-info {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
   }
-  /* line 496, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  /* line 501, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
   .headline {
     margin-left: auto;
     padding: 12px;
   }
-  /* line 501, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  /* line 506, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
   #tab {
     width: 85vw;
     height: 70px;
+  }
+  /* line 517, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  #members,
+  .message {
+    grid-column: 1 / span 1;
+    width: 45vw;
+    border-right: 2px solid #f3f3f3;
+  }
+  /* line 524, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  .activity,
+  #settings {
+    grid-column: 2 / span 1;
+    width: 25vw;
+    padding-left: 10px;
+  }
+  /* line 533, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  #date {
+    margin: 0;
+  }
+  /* line 537, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  .last-member {
+    border-bottom: none;
+  }
+  /* line 550, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  #members,
+  .activity,
+  .message {
+    border-bottom: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 564, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
+  .message {
+    border-bottom: none;
   }
 }
 

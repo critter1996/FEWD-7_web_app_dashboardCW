@@ -482,6 +482,11 @@ main {
 }
 
 
+// .main {
+//     display: grid;
+//     grid-template-columns: 50%;
+//  }
+
 /////////////////Header-Desktop/////////////////
 
 #top-info {
@@ -507,19 +512,58 @@ main {
 
 
 
-
-
-
-
-
-
-
-
 ////////////////Members Section Desktop/////////////////////
+
+#members,
+.message {
+    grid-column: 1 / span 1;
+    width: 45vw;
+    border-right: 2px solid $gray;
+}
+
+.activity,
+#settings {
+    grid-column: 2 / span 1;
+    width: 25vw;
+    padding-left: 10px;
+}
+
+
+
+#date {
+    margin: 0;
+}
+
+.last-member {
+    border-bottom: none;
+}
 
 ////////////////Activity Section Desktop/////////////////////
 
+// .members-activity {
+//     width: 15vw;
+// }
+
+
 ////////////////Message Section Desktop/////////////////////
+// //Long gray Dividing line
+#members,
+.activity,
+.message {
+    border-bottom: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// //Short gray dividing line
+// .members-container,
+// .members-activity {
+//     border-bottom: lightgray solid 1px;
+// }
+
+.message {
+    border-bottom: none;
+}
 
 ////////////////Settings Section Desktop/////////////////////
 
