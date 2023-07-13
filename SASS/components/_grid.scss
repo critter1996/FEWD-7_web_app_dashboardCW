@@ -422,7 +422,6 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 85vw;
     align-items: center;
     gap: 20px;
     text-align: right;
@@ -430,19 +429,21 @@ main {
 }
 
 .members-text {
-    text-align: left;
+    //text-align: left;
+    flex: 1;
 }
 
 #date {
     margin-left: auto;
+
 }
 
 /////////////////Activity Tablet///////////////////////
-.members-activity {
+.members-activity, 
+.members-text {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 85vw;
     align-items: center;
     gap: 20px;
     text-align: right;
@@ -572,14 +573,14 @@ header {
 }
 
 
-.date {
-    //margin-left: 55px;
-    //align-self: flex-end;
-    //align-self: flex-end;
-    text-align:right;
-    line-height: 15px;
+// .date {
+//     //margin-left: 55px;
+//     //align-self: flex-end;
+//     //align-self: flex-end;
+//     //text-align:right;
+//     line-height: 15px;
     
-}
+// }
 
 .last-member {
     border-bottom: none;
