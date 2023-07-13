@@ -23,6 +23,7 @@ header {
     background-color: $main-accent;
     color: whitesmoke;
     height: 80px;
+    padding-right: 5px;
 }
 
 #top-info {
@@ -186,6 +187,9 @@ main {
 
 //////////Activity Section-Mobile///////////
 
+.arrow {
+    display: none;
+}
 
 /////////Message Section-Mobile//////////////
 
@@ -334,9 +338,8 @@ main {
 }
 
 //Top Charts Daily Traffic and Mobile Users
-.daily,
-.mobile {
-    border: 1px lightgray solid;
+.daily {
+    border-right: 1px lightgray solid;
 }
 
 
@@ -356,6 +359,8 @@ main {
     display: flex;
     grid-column: 1 / span 2;
     width: 90vw;
+    padding-left: 10px;
+    gap: 10px;
 }
 
 //each individual FB/INS/TW Box
@@ -381,6 +386,7 @@ main {
 #stats-section {
     grid-column: 1 / span 2;
 }
+
 
 
 /////////////LAYOUT SECTION//////////////////
@@ -489,6 +495,11 @@ main {
 
 /////////////////Header-Desktop/////////////////
 
+header {
+    display: flex;
+    //width: 95vw;
+}
+
 #top-info {
     display: flex;
     justify-content: flex-end;
@@ -499,13 +510,36 @@ main {
 ///////////Dashboard-Desktop///////////////////
 
 .headline {
-    margin-left: auto;
-    padding: 12px;
+    margin-right: auto;
+    //padding: 12px;
 }
 
 #tab {
-    width: 85vw;
+    width: 83vw;
     height: 70px;
+    margin-left: auto;
+}
+
+.daily {
+    width: 45vw;
+}
+
+////////////////Navigation Desktop//////////////////////////
+
+.navigation {
+    display: flex;
+    width: 70px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/////////////////Main Section Desktop///////////////////////
+
+.main {
+    padding-left: 15px;
+    padding-right: 10px;
+    //width: 75vw;
 }
 
 ////////////////Social Section Desktop////////////////////////
@@ -513,6 +547,15 @@ main {
 
 
 ////////////////Members Section Desktop/////////////////////
+
+.members-container {
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    align-items: center;
+   
+}
+
+
 
 #members,
 .message {
@@ -524,14 +567,18 @@ main {
 .activity,
 #settings {
     grid-column: 2 / span 1;
-    width: 25vw;
-    padding-left: 10px;
+    //width: 25vw;
+    //padding-left: 10px;
 }
 
 
-
-#date {
-    margin: 0;
+.date {
+    //margin-left: 55px;
+    //align-self: flex-end;
+    //align-self: flex-end;
+    text-align:right;
+    line-height: 15px;
+    
 }
 
 .last-member {
@@ -540,10 +587,26 @@ main {
 
 ////////////////Activity Section Desktop/////////////////////
 
-// .members-activity {
-//     width: 15vw;
-// }
+.members-activity {
+    width: auto;
+}
 
+.activity-text {
+    display: flex;
+    flex-wrap: wrap;
+    //idth: 50%;
+   // justify-content: space-around;
+   // width: 25vw;
+    text-align: left;
+}
+
+.arrow {
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    padding-right: 10px;
+    font-size: 22px;
+}
 
 ////////////////Message Section Desktop/////////////////////
 // //Long gray Dividing line
@@ -553,20 +616,48 @@ main {
     border-bottom: none;
     margin-left: 0;
     margin-right: 0;
+    overflow-wrap:break-word;
 }
 
 // //Short gray dividing line
-// .members-container,
-// .members-activity {
-//     border-bottom: lightgray solid 1px;
-// }
+.members-container,
+.members-activity {
+    border-bottom: lightgray solid 1px;
+}
 
 .message {
     border-bottom: none;
 }
 
-////////////////Settings Section Desktop/////////////////////
 
+
+.members-text, .members-activity p {
+    margin: 0;
+}
+
+////////////////Settings Section Desktop/////////////////////
+// .toggle {
+
+// }
+
+#box1 {
+    margin-left: 9%;
+}
+
+.settings-button {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+#save,
+#cancel {
+    width: 60%;
+}
+
+#cancel {
+    margin-left: 12px;
+}
 
 ////////////////Footer Section Desktop/////////////////////
 
