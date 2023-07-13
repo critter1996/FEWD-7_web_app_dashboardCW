@@ -418,6 +418,31 @@ main {
 }
 
 /////////////////New Members Tablet///////////////////////
+// .members-container {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     gap: 20px;
+//     text-align: right;
+//     padding-bottom: 10px;
+// }
+
+.members-text {
+    display: flex;
+    text-align: left;
+    flex: 1;
+}
+
+.date {
+    margin-left: auto;
+    padding-right: 10px;
+
+}
+
+/////////////////Activity Tablet///////////////////////
+.members-activity, 
+.members-text,
 .members-container {
     display: flex;
     flex-direction: row;
@@ -428,29 +453,8 @@ main {
     padding-bottom: 10px;
 }
 
+.members-activity p,
 .members-text {
-    //text-align: left;
-    flex: 1;
-}
-
-#date {
-    margin-left: auto;
-
-}
-
-/////////////////Activity Tablet///////////////////////
-.members-activity, 
-.members-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 20px;
-    text-align: right;
-    padding-bottom: 10px;
-}
-
-.members-activity p {
     text-align: left;
 }
 
@@ -551,9 +555,7 @@ header {
 
 .members-container {
     flex-wrap: wrap;
-    //justify-content: space-between;
     align-items: center;
-   
 }
 
 
@@ -591,6 +593,7 @@ header {
 .members-activity {
     width: auto;
 }
+
 
 .activity-text {
     display: flex;
