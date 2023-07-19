@@ -94,6 +94,39 @@ header {
     border: 1px gray solid;
 }
 
+.alert-banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#alert {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid $main-accent;
+    background-color: $main-accent;
+    color: $white;
+    border-radius: 8px;
+    height: 45px;
+    width: 95%;
+    margin:10px;
+    padding: 10px 15px;
+}
+
+.alert-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+//Only the X
+.alert-banner-close {
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 ///////////////////////Navigation-Mobile////////////////////
 

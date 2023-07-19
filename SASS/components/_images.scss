@@ -27,6 +27,10 @@
     fill: whitesmoke;
 }
 
+.bell-svg:hover {
+    transform: scale(1.8);
+}
+
 //profile pic on top
 .current-user {
     width: 50px;
