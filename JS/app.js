@@ -12,6 +12,9 @@ const mobileCanvas = document.getElementById('mobile-users');
 const user = document.getElementById('userField');
 const message = document.getElementById('messageField');
 const send = document.getElementById('send');
+//bell notification
+const bell = document.getElementById('bell');
+const dropdowns = document.getElementsByClassName("dropdown-content");
 
 //////////////////////////////Banner Alert///////////////////////////////////
 
@@ -194,31 +197,54 @@ send.addEventListener('click', () => {
 
 
 
+/////////////////////////////////////////////////////////////
 
 
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  //myFunction();
+
+  bell.addEventListener("click", e => {
+
+  // Close the dropdown menu if the user clicks outside of it
+    if (!e.target.matches('.dropbtn')) {
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        } 
+      }
+    }
+  });
 
 
+// bell.addEventListener("click", e => {
 
+//     if (!e.target.matches('.dropbtn')) {
+//         let i;
+//         for (i = 0; i < dropdowns.length; i++) {
+//           let openDropdown = dropdowns[i];
+//           let isClicked = e.target;
+//             if (isClicked){
+//                 openDropdown.classList.add('show')
+//             } else {
+//                 openDropdown.classList.remove('show')
+//             }
+//         }
+//     }
+// });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// dropdowns.addEventListener('click', e => {
+//     if (!dropdowns.contains(e.target)) {
+//         dropdowns.style.display = 'none';
+//         openDropdown.style.display = 'none';
+//     }
+// });
 
 
 
