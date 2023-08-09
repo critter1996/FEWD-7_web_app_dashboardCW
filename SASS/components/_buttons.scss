@@ -77,9 +77,6 @@
     margin-left: 140px;
 }
 
-// #save {
-//     margin-right: 15px;
-// }
 
 #timezone {
     border: $border-gray 1px solid;
@@ -149,6 +146,27 @@
     display:block;
 }
 
-  ul li::marker {
-    display: none;
+//Buttons for daily, weekly....
+
+.traffic-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+
+
+.traffic-button {
+    border: none;
+    padding: 10px;
+    //align-self: flex-end;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 800;
+    
+}
+
+.traffic-button:focus, .traffic-button:hover {
+    border-radius: 20px;
+    color: $white;
+    background-color: rgb(64, 207, 160);
 }
