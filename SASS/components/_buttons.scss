@@ -86,22 +86,34 @@
 }
 
 //Back 2 top button
+
+.backUpbtn {
+    display: flex;
+    justify-content: center;
+    background-color: $main-accent;
+    color: $white;
+    width: 200px;
+}
+
 .b2t {
     display: flex;
     border: 1px solid $main-accent;
-    width: 90vw;
-    background-color: $main-accent;
+    //width: 95vw;
     color: $white;
     //border-radius: 8px;
     border: none;
-    text-align: center;
     height: 35px;
     justify-self: flex-end;
 }
 
+.b2t a {
+    text-align: center;
+    align-self: center;
+}
 
-
-
+#footer a {
+    text-align: center;
+}
 
 //Dropdown Button
 .dropbtn {

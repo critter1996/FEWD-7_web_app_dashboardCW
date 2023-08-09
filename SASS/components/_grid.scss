@@ -9,8 +9,7 @@
     "header"
     "navigation"
     "dashboard"
-    "main"
-    "footer";
+    "main";
 }
 
 ////////////// Header-Mobile /////////////////////
@@ -290,17 +289,6 @@ main {
 }
 
 
-//////////////////////////Footer-Mobile////////////////////////
-
-#b2t {
-    grid-area: footer;
-    //display: flex;
-    //align-self: center;
-    margin-left: 20%;
-    
-    //text-align: center;
-}
-
 ///////////////////////Tablet Size///////////////////////
 @media (min-width: 768px) {
     
@@ -309,8 +297,7 @@ main {
         grid-template-areas:
         "header header"
         "navigation dashboard"
-        "navigation main"
-        "navigation footer";
+        "navigation main";
 }
 
         
@@ -451,15 +438,6 @@ main {
 }
 
 /////////////////New Members Tablet///////////////////////
-// .members-container {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     align-items: center;
-//     gap: 20px;
-//     text-align: right;
-//     padding-bottom: 10px;
-// }
 
 .members-text {
     display: flex;
@@ -521,15 +499,9 @@ main {
         grid-template-areas:
         "header header"
         "navigation dashboard"
-        "navigation main"
-        "navigation footer";
+        "navigation main";
 }
 
-
-// .main {
-//     display: grid;
-//     grid-template-columns: 50%;
-//  }
 
 /////////////////Header-Desktop/////////////////
 
@@ -580,9 +552,6 @@ header {
     //width: 75vw;
 }
 
-////////////////Social Section Desktop////////////////////////
-
-
 
 ////////////////Members Section Desktop/////////////////////
 
@@ -608,15 +577,6 @@ header {
 }
 
 
-// .date {
-//     //margin-left: 55px;
-//     //align-self: flex-end;
-//     //align-self: flex-end;
-//     //text-align:right;
-//     line-height: 15px;
-    
-// }
-
 .last-member {
     border-bottom: none;
 }
@@ -631,9 +591,6 @@ header {
 .activity-text {
     display: flex;
     flex-wrap: wrap;
-    //idth: 50%;
-   // justify-content: space-around;
-   // width: 25vw;
     text-align: left;
 }
 
@@ -673,9 +630,6 @@ header {
 }
 
 ////////////////Settings Section Desktop/////////////////////
-// .toggle {
-
-// }
 
 #box1 {
     margin-left: 9%;
@@ -695,9 +649,6 @@ header {
 #cancel {
     margin-left: 12px;
 }
-
-////////////////Footer Section Desktop/////////////////////
-
 
 
 ///////////////////////////END Of Desktop//////////////////
