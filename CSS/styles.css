@@ -20,6 +20,11 @@ html {
   width: 100vw;
 }
 
+/* line 21, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/base/_page.scss */
+ul {
+  list-style-type: none;
+}
+
 /* line 1, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_images.scss */
 .social-image {
   width: 30%;
