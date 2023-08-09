@@ -15,6 +15,11 @@ const send = document.getElementById('send');
 //bell notification
 const bell = document.getElementById('bell');
 const dropdowns = document.getElementsByClassName("dropdown-content");
+//Extra Charts
+const hourly = document.getElementById('hourly-button');
+const weekly = document.getElementById('weekly-button');
+const monthly = document.getElementById('monthly-button');
+const yearly = document.getElementById('yearly-button');
 
 //////////////////////////////Banner Alert///////////////////////////////////
 
@@ -40,44 +45,44 @@ alertBanner.addEventListener("click", e => {
 
 //First chart (traffic) Line Graph
 
-let trafficData = {
-    labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
-    "4-10", "11-17", "18-24", "25-31"],
-    datasets: [{
-    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    2500],
-    backgroundColor: 'rgba(116, 119, 191, .3)',
-    borderWidth: 1,
-    }]
-    };
+// let trafficData = {
+//     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+//     "4-10", "11-17", "18-24", "25-31"],
+//     datasets: [{
+//     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+//     2500],
+//     backgroundColor: 'rgba(116, 119, 191, .3)',
+//     borderWidth: 1,
+//     }]
+//     };
 
 
-    let trafficOptions = {
-        backgroundColor: 'rgba(112, 104, 201, .5)',
-        fill: true,
-        aspectRatio: 2.5,
-        animation: {
-        duration: 0
-        },
-        scales: {
-        y: {
-        beginAtZero: true
-        }
-        },
-        plugins: {
-        legend: {
-        display: false
-        }
-        }
-        };
+//     let trafficOptions = {
+//         backgroundColor: 'rgba(112, 104, 201, .5)',
+//         fill: true,
+//         aspectRatio: 2.5,
+//         animation: {
+//         duration: 0
+//         },
+//         scales: {
+//         y: {
+//         beginAtZero: true
+//         }
+//         },
+//         plugins: {
+//         legend: {
+//         display: false
+//         }
+//         }
+//         };
 
 
 
-        let trafficChart = new Chart(trafficCanvas, {
-            type: 'line',
-            data: trafficData,
-            options: trafficOptions
-            });
+//         let trafficChart = new Chart(trafficCanvas, {
+//             type: 'line',
+//             data: trafficData,
+//             options: trafficOptions
+//             });
 
 
 //2nd chart (Daily) Bar graph
@@ -177,6 +182,26 @@ send.addEventListener('click', () => {
 
 //1. Display at least two notifications at the same time when the user clicks the alerts icon with dropdown menu.
 
+
+bell.addEventListener("click", e => {
+
+    if (!e.target.matches('.dropbtn')) {
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          let isClicked = e.target;
+            if (isClicked){
+                openDropdown.classList.toggle('show')
+            } else {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+});
+
+
+
+
 //2. Traffic chart widget - Create a navigation similar to the one in the mockup to display different data when the Hourly,
 // Daily, Weekly and Monthly button is selected. Add functionality to the Hourly, Daily, Weekly and Monthly buttons so that 
 // a different line chart is displayed on click.
@@ -199,22 +224,205 @@ send.addEventListener('click', () => {
 
 /////////////////////////////////////////////////////////////
 
+let hourlyData = {
+    labels: ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
+    datasets: [{
+    data: [200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500,
+    2000, 3000],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+    }]
+    };
 
-bell.addEventListener("click", e => {
+let weeklyData = {
+    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+    "4-10", "11-17", "18-24", "25-31"],
+    datasets: [{
+    data: [200, 400, 600, 800, 1200, 1400, 1600, 1800, 2000, 2200, 2400],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+    }]
+    };
+    
+let monthlyData = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+    "Aug", "Sep", "Oct", "Nov", 'Dec'],
+    datasets: [{
+    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500, 3500],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+    }]
+    };
 
-    if (!e.target.matches('.dropbtn')) {
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          let isClicked = e.target;
-            if (isClicked){
-                openDropdown.classList.toggle('show')
-            } else {
-                openDropdown.classList.remove('show')
-            }
+let yearlyData = {
+    labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016",
+    "2017", "2018", "2019", "2020"],
+    datasets: [{
+    data: [1750, 2250, 3000, 4000, 5500, 6750, 7250, 8850, 9250, 10500, 11500],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    // backgroundColor: '#be2596',
+    borderWidth: 1,
+    }]
+    };
+
+
+
+
+let hourlyChart = {
+    type: 'line',
+    data: hourlyData,
+    options: {
+        backgroundColor: 'rgba(112, 104, 201, .5)',
+        fill: true,
+        aspectRatio: 2.5,
+        animation: {
+        duration: 0
+        },
+        scales: {
+        y: {
+        beginAtZero: true
         }
+        },
+        plugins: {
+        legend: {
+        display: false
+        }
+        }
+        }
+    };
+
+let weeklyChart = {
+    type: 'line',
+    data: weeklyData,
+    options:  {
+        backgroundColor: 'rgba(112, 104, 201, .5)',
+        fill: true,
+        aspectRatio: 2.5,
+        animation: {
+        duration: 0
+        },
+        scales: {
+        y: {
+        beginAtZero: true
+        }
+        },
+        plugins: {
+        legend: {
+        display: false
+        }
+        }
+        }
+    };
+
+
+let monthlyChart = {
+    type: 'line',
+    data: monthlyData,
+    options: {
+        backgroundColor: 'rgba(112, 104, 201, .5)',
+        fill: true,
+        aspectRatio: 2.5,
+        animation: {
+        duration: 0
+        },
+        scales: {
+        y: {
+        beginAtZero: true
+        }
+        },
+        plugins: {
+        legend: {
+        display: false
     }
-});
+}
+}
+};
+
+let yearlyChart = {
+    type: 'line',
+    data: yearlyData,
+    options:  {
+        backgroundColor: 'rgba(112, 104, 201, .5)',
+        fill: true,
+        aspectRatio: 2.5,
+        animation: {
+        duration: 0
+        },
+        scales: {
+        y: {
+        beginAtZero: true
+        }
+        },
+        plugins: {
+        legend: {
+        display: false
+    }
+}
+}
+};
+
+
+//////////////////////////////
+let newChart = new Chart(
+    document.getElementById('traffic-chart'),
+    hourlyChart
+    );
+
+
+    hourly.addEventListener("click", e => {
+        newChart.destroy();
+        newChart = new Chart(
+        document.getElementById('traffic-chart'),
+        hourlyChart
+        );
+    });
+
+
+
+    weekly.addEventListener("click", e => {
+        newChart.destroy();
+        newChart = new Chart(
+        document.getElementById('traffic-chart'),
+        weeklyChart
+        );
+    });
+
+
+
+    monthly.addEventListener("click", e => {
+        newChart.destroy();
+        newChart = new Chart(
+        document.getElementById('traffic-chart'),
+        monthlyChart
+        );
+    });
+
+    yearly.addEventListener("click", e => {
+        newChart.destroy();
+        newChart = new Chart(
+        document.getElementById('traffic-chart'),
+        yearlyChart
+        );
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
