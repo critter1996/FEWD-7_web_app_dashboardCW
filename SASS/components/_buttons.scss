@@ -88,32 +88,32 @@
 //Back 2 top button
 
 .backUpbtn {
+  grid-area: footer;
     display: flex;
     justify-content: center;
     background-color: $main-accent;
     color: $white;
     width: 200px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 8px;
+
+    
 }
+
 
 .b2t {
     display: flex;
-    border: 1px solid $main-accent;
-    //width: 95vw;
-    color: $white;
-    //border-radius: 8px;
     border: none;
-    height: 35px;
-    justify-self: flex-end;
+    color: $white;
+    border: none;
+    height: 25px;
 }
 
-.b2t a {
-    text-align: center;
-    align-self: center;
-}
 
-#footer a {
-    text-align: center;
-}
 
 //Dropdown Button
 .dropbtn {

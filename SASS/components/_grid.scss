@@ -9,7 +9,8 @@
     "header"
     "navigation"
     "dashboard"
-    "main";
+    "main"
+    "footer";
 }
 
 ////////////// Header-Mobile /////////////////////
@@ -288,6 +289,10 @@ main {
     // text-align: 
 }
 
+//////////////////////Footer
+// .centerBtn {
+//     grid-area: footer;
+// }
 
 ///////////////////////Tablet Size///////////////////////
 @media (min-width: 768px) {
@@ -297,7 +302,8 @@ main {
         grid-template-areas:
         "header header"
         "navigation dashboard"
-        "navigation main";
+        "navigation main"
+        "navigation footer";
 }
 
         
@@ -499,7 +505,8 @@ main {
         grid-template-areas:
         "header header"
         "navigation dashboard"
-        "navigation main";
+        "navigation main"
+        "navigation footer";
 }
 
 
@@ -514,6 +521,7 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
+    padding-right: 6px;
 }
 
  
@@ -542,6 +550,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     gap: 15px;
+    
 }
 
 /////////////////Main Section Desktop///////////////////////
@@ -629,6 +638,9 @@ header {
     margin: 0;
 }
 
+#messageField {
+    height: 160px;
+}
 ////////////////Settings Section Desktop/////////////////////
 
 #box1 {
@@ -640,6 +652,14 @@ header {
     justify-content: space-between;
     width: 40vw;
 }
+
+#settings h3,
+#check1, 
+#check2,
+#timezone {
+    margin-bottom: 25px;
+}
+
 
 #save,
 #cancel {

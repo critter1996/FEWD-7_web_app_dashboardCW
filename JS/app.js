@@ -12,14 +12,19 @@ const mobileCanvas = document.getElementById('mobile-users');
 const user = document.getElementById('userField');
 const message = document.getElementById('messageField');
 const send = document.getElementById('send');
-//bell notification
+//bell notification EC
 const bell = document.getElementById('bell');
 const dropdowns = document.getElementsByClassName("dropdown-content");
-//Extra Charts
+//Extra Charts EC
 const hourly = document.getElementById('hourly-button');
 const weekly = document.getElementById('weekly-button');
 const monthly = document.getElementById('monthly-button');
 const yearly = document.getElementById('yearly-button');
+//Search for User EC
+const searchContainer = document.getElementById('searchContainer');
+const searchInput = document.getElementById('userField');
+const dropdownContainer = document.getElementById('dropdownContainer');
+const dropdown = document.getElementById('dropdown');
 
 //////////////////////////////Banner Alert///////////////////////////////////
 
@@ -202,28 +207,20 @@ bell.addEventListener("click", e => {
 
 
 
-//2. Traffic chart widget - Create a navigation similar to the one in the mockup to display different data when the Hourly,
-// Daily, Weekly and Monthly button is selected. Add functionality to the Hourly, Daily, Weekly and Monthly buttons so that 
-// a different line chart is displayed on click.
-
-//3. Add an "autocomplete" feature for the "Search for User" box, listing names that match the search term.
-
-//4. Use local storage to save the settings.
-// -The settings are saved to local storage when the "Save" button is clicked.
-// -The settings are reset when the "Cancel" button is clicked.
-// -When page is reloaded the settings are remembered.
-
-
-//Create dropdown menu for alerts icon notification (click)
-
-//step 1 - make event listener for icon
-//step 2 - make dropdown menu
-//step 3 - make 2 notifications
 
 
 
-/////////////////////////////////////////////////////////////
 
+
+/////////////////////////////Changing Graph//////////////////////////////////////////
+//2. Traffic chart widget
+// Create a navigation similar to the one in the mockup to display different data when the 
+// Hourly, Daily, Weekly and Monthly button is selected. Add functionality to the 
+// Hourly, Daily, Weekly and Monthly buttons so that a different line chart is displayed on click.
+
+
+
+////Data for charts
 let hourlyData = {
     labels: ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
     datasets: [{
@@ -235,10 +232,9 @@ let hourlyData = {
     };
 
 let weeklyData = {
-    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
-    "4-10", "11-17", "18-24", "25-31"],
+    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     datasets: [{
-    data: [200, 400, 600, 800, 1200, 1400, 1600, 1800, 2000, 2200, 2400],
+    data: [200, 400, 600, 800, 300, 1400, 1600, 900, 2000, 2200, 2400],
     backgroundColor: 'rgba(116, 119, 191, .3)',
     borderWidth: 1,
     }]
@@ -266,7 +262,7 @@ let yearlyData = {
     };
 
 
-
+//Make the charts
 
 let hourlyChart = {
     type: 'line',
@@ -362,7 +358,7 @@ let yearlyChart = {
 };
 
 
-//////////////////////////////
+//////////////////////////////Connect the charts and change them
 let newChart = new Chart(
     document.getElementById('traffic-chart'),
     hourlyChart
@@ -409,15 +405,75 @@ let newChart = new Chart(
 
 
 
+//////////////////////////Search for User////////////////////////////////
+
+//3. Add an "autocomplete" feature for the "Search for User" box, listing names that match the search term.
+
+
+
+const userData = [
+    {
+        uid: 1,
+        name: 'Victoria Chambers',
+        email: 'victoria.chambers80@example.com',
+        image: 'images/member-1.jpg', 
+    },
+    {
+        uid: 2,
+        name: 'Dale Byrd',
+        email: 'dale.byrd52@example.com',
+        image: 'images/member-2.jpg', 
+    },
+    {
+        uid: 3,
+        name: 'Dawn Wood',
+        email: 'dawn.wood16@example.com',
+        image: 'images/member-3.jpg', 
+    },
+    {
+        uid: 4,
+        name: 'Dan Oliver',
+        email: 'dan.oliver82@example.com',
+        image: 'images/member-4.jpg',
+    }
+];
+
+
+
+searchInput.addEventListener('keyup', e => {
+    let value = e.target.value.toLowerCase();
+    if (value !== '') {
+        searchContainer.classList.add('expanded');
+        dropdownContainer.classList.add('show');
+        dropdown.innerHTML = '';
+        userData.forEach(user => {
+            if (user.name.toLowerCase().includes(value)) {
+                dropdown.innerHTML += 
+                `
+                <li>
+                    <img class="user-image" src="${user.image}" alt="Picture of ${user.name}">
+                    <div class="group">
+                        <p>${user.name}</p>
+                        <p>${user.email}</p>
+                    </div>
+                </li>
+                `
+            }
+        })
+    } else {
+        searchContainer.classList.remove('expanded');
+        dropdownContainer.classList.remove('show');
+    }
+});
 
 
 
 
 
-
-
-
-
+//4. Use local storage to save the settings.
+// -The settings are saved to local storage when the "Save" button is clicked.
+// -The settings are reset when the "Cancel" button is clicked.
+// -When page is reloaded the settings are remembered.
 
 
 

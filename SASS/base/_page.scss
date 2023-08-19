@@ -23,4 +23,120 @@ ul {
   }
 
 /////////////////////////////////////
+/// 
+/// 
 
+////////////FROM Searchbar
+/// 
+* li {
+    list-style: none;
+  }
+  
+  :root {
+    --primary: #F0B37B;
+    --bg: #252935;
+    --text: #354650;
+    --gray-dark: #D9D9D9;
+    --gray-light: #F4F4F4;
+    --white: #FFFFFF;
+    --box-shadow: 0px 0px 12px 7px rgba(240, 179, 123, 0.3);
+  }
+  
+//   body {
+//     background-color: var(--bg);
+//     min-height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//   }
+  
+
+  .search-container {
+    //margin-top: 3rem;
+    //width: 80%;
+    //max-width: 350px;
+    background-color: $white;
+    position: relative;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+   // box-shadow: var(--box-shadow);
+  }
+  .search-container.expanded {
+    border-radius: .5rem .5rem 0 0;
+  }
+  .search-container img {
+    width: 1.5rem;
+    margin-left: .5rem;
+  }
+  .search-container input {
+    width: 100%;
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    color: var(--text);
+  }
+  
+  .dropdown-container {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: $white;
+    border-top: 1px solid $gray;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    padding: .5rem .5rem .5rem 0;
+  }
+  
+  .dropdown-container.show {
+    pointer-events: all;
+    opacity: 1;
+    top: 100%;
+  }
+  
+  .dropdown {
+    padding: .5rem;
+    max-height: 150px;
+    overflow: auto;
+  }
+  
+  
+  .dropdown::-webkit-scrollbar {
+    background-color: $gray;
+    border-radius: 25px;
+    width: .33rem;
+  }
+  
+  .dropdown::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: $gray;
+  }
+  
+  .dropdown li {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  .dropdown li:hover {
+    background-color: $gray;
+  }
+  
+  .dropdown li img {
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: $gray;
+    margin-right: 1rem;
+  }
+  
+  .dropdown .group p:first-of-type {
+    font-weight: 600;
+  }
+  
+  .dropdown .group p:last-of-type {
+    font-size: .7rem;
+  }

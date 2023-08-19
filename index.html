@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title class="title">Web App</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -289,9 +290,42 @@
     <section class="message">
       <h3>Message User</h3>
 
+
       <form class="message-container">
-        <div>
+        <div class="search-container" id="searchContainer">
           <input type="text" placeholder="Message User" class="form-field" id="userField">
+          <div class="dropdown-container" id="dropdownContainer">
+            <ul class="dropdown" id="dropdown">
+                <li>
+                    <img class="profile-image" src="images/member-1.jpg" alt="member-1">
+                    <div class="group">
+                        <p>Victoria Chambers</p>
+                        <p>victoria.chambers80@example.com</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="profile-image" src="images/member-2.jpg" alt="member-2">
+                    <div class="group">
+                        <p>Dale Byrd</p>
+                        <p>dale.byrd52@example.com</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="profile-image" src="images/member-3.jpg" alt="member-3">
+                    <div class="group">
+                        <p>Dawn Wood</p>
+                        <p>dawn.wood16@example.com</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="profile-image" src="images/member-4.jpg" alt="member-4">
+                    <div class="group">
+                        <p>Dan Oliver</p>
+                        <p>dan.oliver82@example.com</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
         </div>
         <div>
           <textarea placeholder="Message for User" class="form-area" id="messageField"></textarea>
@@ -330,11 +364,19 @@
       </div>
     </section>
 
+
+
     </main>
     <script src="JS/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.2/chart.umd.js" integrity="sha512-KIq/d78rZMlPa/mMe2W/QkRgg+l0/GAAu4mGBacU0OQyPV/7EPoGQChDb269GigVoPQit5CqbNRFbgTjXHHrQg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     //////
     </script>
   </body> <!--end of grid container-->
-    <button class="backUpbtn"><a class="b2t" href="#">Back to Top</a></button>
+
+  <footer>
+    <div class="centerBtn">
+      <button class="backUpbtn"><a class="b2t" href="#">Back to Top</a></button>
+    </div>
+  </footer>
+
 </html>
