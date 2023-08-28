@@ -73,7 +73,19 @@ header {
     margin-top: 15px;
 }
 
-
+.notification-dot {
+    height: 6px;
+    width: 6px;
+    background-color: #525199;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
+    position: relative;
+    // top: 8px; //-8px;
+    // left: -8px;
+    top: -48px;
+    left: 16px;
+  }
 
 ////////////////////Tab and dashboard//////////////////////////
 .main-header {
@@ -332,6 +344,11 @@ header {
     padding-right: 10px;
 }
 
+.notification-dot {
+    top: -20px;
+    left: 0px;
+}
+
 ///////////////////Navigation-Tablet////////////////////////////
 nav {
     grid-area: navigation;
@@ -524,6 +541,10 @@ header {
     padding-right: 6px;
 }
 
+.notification-dot {
+    top: -22px;
+    left: -4px;
+}
  
 ///////////Dashboard-Desktop///////////////////
 
