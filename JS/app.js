@@ -476,6 +476,55 @@ searchInput.addEventListener('keyup', e => {
 // -When page is reloaded the settings are remembered.
 
 
+//get the stored saved setting if the user has saved any setting on the page
+  const emailCheckbox = document.getElementById('box1');
+  const profileCheckbox = document.getElementById('box2');
+  const timezone = document.getElementById('timezone');
+
+  //these will hold values to the relevant localstorage values:
+  let emailSetting = localStorage.getItem('email');
+  let profileSetting = localStorage.getItem('profile');
+  let timezoneSetting = localStorage.getItem('timezone');
+
+
+//create the logic that will handle the appearance of the UI elements based on the above localstorage settings:
+    emailCheckbox.checked = emailSetting === 'on';
+    profileCheckbox.checked = profileSetting === 'on';
+        if (timezoneSetting) {
+        const index = Array.from(timezone.options).findIndex(
+        option => option.value === timezoneSetting
+        );
+        timezone.selectedIndex = index;
+  }
+
+//Create two more variables that reference save and cancel buttons:
+const saveBtn = document.getElementById('save');
+const cancelBtn = document.getElementById('cancel');
+
+//save button event logic:
+//check for a click event on it, then create a variable to get the current selected option on the timezone
+// then set in localStorage the email and profile checkbox setting based on if its toggled on or not
+//Then if the timezone option is not the default option, we know the user set a timezone, so we will save it in localstorage
+
+
+saveBtn.addEventListener('click', () => {
+    const timezoneOption = timezone[timezone.selectedIndex].textContent;
+    localStorage.setItem('email', emailCheckbox.checked ? 'on' : 'off');
+    localStorage.setItem('profile', profileCheckbox.checked ? 'on' : 'off');
+    if (timezoneOption !== 'Select a Timezone') {
+      localStorage.setItem('timezone', timezoneOption);
+    }
+  });
+
+
+
+  cancelBtn.addEventListener('click', () => {
+    localStorage.removeItem('email');
+    localStorage.removeItem('profile');
+    localStorage.removeItem('timezone');
+  });
+
+
 
 
 
