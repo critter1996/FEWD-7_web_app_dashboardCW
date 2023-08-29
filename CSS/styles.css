@@ -373,8 +373,8 @@ main {
 .activity,
 .message {
   border-bottom: 2px lightgrey solid;
-  margin-left: -10;
-  margin-right: -10;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 /* line 177, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
@@ -712,6 +712,7 @@ main {
   /* line 551, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
   .headline {
     margin-right: auto;
+    padding-left: 22px;
   }
   /* line 556, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_grid.scss */
   #tab {
@@ -967,7 +968,7 @@ main {
 }
 
 /* line 149, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
-.dropdown-content a {
+.dropdown-content li {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -975,7 +976,7 @@ main {
 }
 
 /* line 157, ../../Coding Projects/FEWD-7_web_app_dashboard/FEWD-7_web_app_dashboardCW/SASS/components/_buttons.scss */
-.dropdown-content a:hover {
+.dropdown-content li:hover {
   background-color: #ddd;
 }
 

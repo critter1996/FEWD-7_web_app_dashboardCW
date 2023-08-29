@@ -169,8 +169,8 @@ main {
 .activity,
 .message {
     border-bottom: 2px lightgrey solid;
-    margin-left: -10;
-    margin-right: -10;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 //Short gray dividing line
@@ -550,7 +550,7 @@ header {
 
 .headline {
     margin-right: auto;
-    //padding: 12px;
+    padding-left: 22px;
 }
 
 #tab {
@@ -607,7 +607,7 @@ header {
 }
 
 
-.last-member {
+#last-member {
     border-bottom: none;
 }
 
