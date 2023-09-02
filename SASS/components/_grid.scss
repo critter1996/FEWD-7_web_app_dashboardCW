@@ -22,19 +22,12 @@ header {
     justify-content: space-between;
     background-color: $main-accent;
     color: whitesmoke;
-    height: 80px;
-    padding-right: 5px;
-}
-
-#top-info {
-        display: flex;
-        justify-content: flex-end;
-        gap: 15px;
+    height: 60px;
 }
 
 .webapp-logo {
-    font-size: 24px;
-    margin-top: 15px;
+    font-size: 18px; 
+    margin-top: 15px; 
     padding-left: 10px;
     justify-self: flex-start; 
 }
@@ -43,7 +36,7 @@ header {
 .vertical-line {
     height: 40px;
     top: 0;
-    margin-top: 15px;
+    margin-top: 10px;
     border-left: 1px solid $gray;
     position: relative;
     justify-self: center;
@@ -52,45 +45,43 @@ header {
 //bell-svg in images file
 
 //Grouping of top items in header
+
 #top-info {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    justify-content: center;
+    gap: 10px;
 }
 
 
 //current-user and top-name
 #notifications {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-    justify-self: center;
-    margin-top: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .top-name {
-    margin-top: 15px;
+    margin-top: 23px;
+    font-size: 12px;
+    margin-right: 25px;
 }
 
 .notification-dot {
     height: 6px;
     width: 6px;
-    background-color: #525199;
+    background-color: rgb(64, 207, 160);
     border-radius: 50%;
-    border: 1px solid white;
     display: inline-block;
     position: relative;
-    // top: 8px; //-8px;
-    // left: -8px;
-    top: -48px;
-    left: 16px;
+    top: -17px;
+    left: -3px;
   }
 
 ////////////////////Tab and dashboard//////////////////////////
 .main-header {
     grid-area: dashboard;
-    height: 80px;
+    height: 45px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     
@@ -98,7 +89,8 @@ header {
 
 .headline {
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 #tab {
@@ -120,10 +112,13 @@ header {
     background-color: $main-accent;
     color: $white;
     border-radius: 8px;
-    height: 45px;
-    width: 95%;
-    margin:10px;
-    padding: 10px 15px;
+    height: 40px;
+    width: 90%;
+    margin:8px;
+    //padding: 10px 15px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 14px;
 }
 
 .alert-banner {
@@ -138,6 +133,7 @@ header {
     cursor: pointer;
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 8px;
 }
 
 ///////////////////////Navigation-Mobile////////////////////
@@ -155,10 +151,21 @@ main {
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
-    margin-left: 10px;
+    //margin-left: 10px;
+    padding: 5px;
 }
 
+#traffic h3 {
+    font-size: 14px;
+}
 
+ h3 {
+    font-size: 16px;
+}
+
+#hourly-button:focus {
+    outline: none;
+}
 
 //Long gray Dividing line
 #traffic,
@@ -169,8 +176,11 @@ main {
 .activity,
 .message {
     border-bottom: 2px lightgrey solid;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-bottom: 10px;
+}
+
+.mobile {
+    padding-bottom: 10px;
 }
 
 //Short gray dividing line
@@ -179,10 +189,20 @@ main {
     border-bottom: lightgray solid 1px;
 }
 
+#last-member,
+#last {
+    border-bottom: none;
+}
+
+// .social-container:nth-child(4) {
+//     border-bottom: none;
+//  }
+
 .social-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto;
+    display: flex;
     border: 1px $gray solid;
     border-radius: 2%;
     background-color: $gray;
@@ -277,18 +297,29 @@ main {
 }
 
 #check1 {
+    display: flex;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 #check2 {
+    display: flex;
     padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.check-label {
+    display: flex;
+    white-space: nowrap;
 }
 
 #box1 {
-    margin-left: 30%;
+    //margin-left: 30%;
+    margin-left: auto;
 }
 
 #box2 {
-    margin-left: 37.5%;
+    //margin-left: 37.5%;
+    margin-left: auto;
 }
 
 #timezone {
@@ -301,7 +332,7 @@ main {
     // text-align: 
 }
 
-//////////////////////Footer
+////////////////////Footer
 // .centerBtn {
 //     grid-area: footer;
 // }

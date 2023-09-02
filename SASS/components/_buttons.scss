@@ -15,7 +15,7 @@
     width: 80px;
     height: 30px;
     border-radius: 25px;
-    background-color: #ccc;
+    background-color: rgb(142, 24, 245);//#ccc;
     transition: background-color .3s;
     outline: none;
     cursor: pointer;
@@ -26,7 +26,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 75%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     height: 1.25rem;
@@ -37,14 +37,14 @@
 
 //input
 .toggle:checked {
-    background-color: rgb(142, 24, 245);
+    background-color: #ccc;//rgb(142, 24, 245);
 }
 
 //input
 .toggle:checked:after {
-    left: 70%;
-    
+    left: 25%; 
 }
+
 
 
 //Save and Send
@@ -64,9 +64,13 @@
 #save,
 #cancel {
     height: 50px;
-    width: 30%;
+    width: 125px;
     font-size: 16px;
     margin-top: 15px;
+}
+.settings-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 #cancel {
@@ -74,7 +78,9 @@
     border: none;
     background-color: #847c7c;
     color: $white;
-    margin-left: 140px;
+    //margin-left: 140px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 
@@ -90,29 +96,19 @@
 .backUpbtn {
   grid-area: footer;
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px;
     justify-content: center;
+    text-decoration: none;
+    text-align: center;
     background-color: $main-accent;
     color: $white;
-    width: 200px;
-    margin: 0;
+    margin-top: auto;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: none;
-    border-radius: 8px;
-
     
 }
-
-
-.b2t {
-    display: flex;
-    border: none;
-    color: $white;
-    border: none;
-    height: 25px;
-}
-
 
 
 //Dropdown Button
@@ -122,14 +118,7 @@
     cursor: pointer;
   }
   
-//Dropdown button on hover & focus
-  .dropbtn:hover, .dropbtn:focus {
-    border: 1px solid black;
-    padding: 2px;
-  }
 
-
-  
 //The container <div> - needed to position the dropdown content
   #top-info {
     position: relative;
@@ -167,18 +156,20 @@
 
 .traffic-nav {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 12px;
+    justify-content: flex-start;
+    padding-left: 12px;
+    
 }
 
 
 .traffic-button {
     border: none;
     padding: 10px;
-    //align-self: flex-end;
     background-color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
+    //margin-right: 10px;
+    
     
 }
 

@@ -46,10 +46,10 @@
 
     
       <!--container element for notifications (pic and name)-->
-      <div id="notifications" > 
+      <!-- <div id="notifications" >  -->
             <img class="current-user" src="images/member-1.jpg" alt="user-1 profile">
             <h4 class="top-name">Student&nbsp;Name</h4>          
-      </div>
+      <!-- </div> -->
 
     </div>
 
@@ -110,9 +110,9 @@
       <!--line graph charts-->
       <section id="traffic">
         <div class="traffic-header">
-          <h3>Traffic</h3>
+          <h3>TRAFFIC</h3>
           <ul class="traffic-nav">
-            <button class="traffic-button" id="hourly-button"><li class="traffic-nav-link">Hourly</li></button>
+            <button class="traffic-button" id="hourly-button" autofocus><li class="traffic-nav-link">Hourly</li></button>
             <button class="traffic-button" id="weekly-button"><li class="traffic-nav-link">Weekly</li></button>
             <button class="traffic-button" id="monthly-button"><li class="traffic-nav-link">Monthly</li></button>
             <button class="traffic-button" id="yearly-button"><li class="traffic-nav-link">Yearly</li></button>
@@ -155,7 +155,10 @@
             <div class="social-image">
               <!-- inline SVG not included for brevity -->
               <svg class="facebook" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <!-- <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /> -->
+                <!-- <circle stroke="black" stroke-width="3"> -->
                 <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"/>
+              <!-- </circle> -->
               </svg>
             </div>
             
@@ -186,7 +189,7 @@
           <div class="social-container">
             <div class="social-image">
               <!-- inline SVG not included for brevity -->
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="twitter" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
               </svg>
 
@@ -233,7 +236,7 @@
         </div>
       </div>
 <!-- Member 4 -->
-      <div class="members-container" id="last-member">
+      <div class="members-container" id="last">
         <img src="images/member-4.jpg" class="profile-image" alt="Dan Oliver Profile">
         <div class="members-text">
           <p>Dan Oliver<br>
@@ -275,7 +278,7 @@
         </div>
         <span class="arrow">&#62;</span>
       </div>
-      <div class="members-activity">
+      <div class="members-activity" id="last-member">
         <img src="images/member-4.jpg" class="profile-image" alt="Dan Oliver Profile">
         <div class="activity-text">
         <p>
@@ -340,13 +343,18 @@
       <div #toggle>
 
         <div id="check1">
-          <label class="set-email" >Send Email Notifications</label> 
+          <label class="check-label">Send Email Notifications</label> 
+          <label>
+
           <input  id="box1" type="checkbox" class="toggle">
         </div>
 
         <div id="check2">
-          <label>Set Profile to Public</label>
+          <label class="check-label">Set Profile to Public</label>
+          
+
           <input id="box2" type="checkbox" class="toggle">
+          <span class="labels" data-on="ON" data-off="OFF"></span>
         </div>
      </div>
 
@@ -357,7 +365,7 @@
         <option>Mountain</option>
         <option>Pacific</option>
       </select>
-      <div class="settings-button">
+      <div class="settings-buttons">
         <button class="button-primary" id="save">Save</button>
         <button class="button-disabled" id="cancel">Cancel</button>
       </div>
@@ -366,12 +374,18 @@
     </main>
     <script src="JS/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.2/chart.umd.js" integrity="sha512-KIq/d78rZMlPa/mMe2W/QkRgg+l0/GAAu4mGBacU0OQyPV/7EPoGQChDb269GigVoPQit5CqbNRFbgTjXHHrQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <footer>
+      <a class="backUpbtn" href="#">Back to Top</a>
+    </footer>
+ 
   </body> <!--end of grid container-->
 
-  <footer>
-    <div class="centerBtn">
-      <button class="backUpbtn"><a class="b2t" href="#">Back to Top</a></button>
-    </div>
-  </footer>
+  <!-- <footer class="centerBtn"> -->
+
+    <!-- <div>
+      <button ></button>
+    </div> -->
+  <!-- </footer> -->
 
 </html>
