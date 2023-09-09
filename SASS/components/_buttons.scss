@@ -12,6 +12,7 @@
     -webkit-appearance: none;
     position: relative;
     //width: 50px;
+    //left: 25%;
     width: 80px;
     height: 30px;
     border-radius: 25px;
@@ -21,13 +22,14 @@
     cursor: pointer;
 }
 
+
 //input
-.toggle::after {
+.toggle::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    top: 15%; //50%;
+    left: 70%; //75%;
+    //transform: translate(-50%, -50%);
     border-radius: 50%;
     height: 1.25rem;
     width: 1.25rem;
@@ -35,14 +37,16 @@
     transition: left .3s;
 }
 
-//input
-.toggle:checked {
-    background-color: #ccc;//rgb(142, 24, 245);
-}
+// // //input
+// .toggle:checked {
+//     background-color: #ccc;//rgb(142, 24, 245);
+// }
 
-//input
-.toggle:checked:after {
-    left: 25%; 
+// // //input
+.toggle::after {
+    left: 6%;//78%;//-25%; 
+    transform: translate(-50%, -50%);
+    transition: left .3s;
 }
 
 
@@ -64,10 +68,17 @@
 #save,
 #cancel {
     height: 50px;
-    width: 125px;
+    width: 45%;
     font-size: 16px;
     margin-top: 15px;
 }
+
+@media (min-width: 768px) {
+  #save, #cancel {
+    width: 48%;
+}
+}
+
 .settings-buttons {
   display: flex;
   justify-content: space-between;
@@ -154,12 +165,7 @@
 
 //Buttons for daily, weekly....
 
-.traffic-nav {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 12px;
-    
-}
+
 
 
 .traffic-button {
