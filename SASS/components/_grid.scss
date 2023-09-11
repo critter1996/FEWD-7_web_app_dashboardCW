@@ -670,7 +670,7 @@ header {
 
 #alert {
     margin-top: 25px;
-    width: 93%;
+    //width: 93%;
 }
 
 .daily {
@@ -696,8 +696,23 @@ header {
     //width: 75vw;
 }
 
+.traffic-nav {
+    padding-right: 57px;
+}
+
+// .widget-container-full {
+//     width: 85vw;
+// }
+
+// #message,
+// #settings {
+//     border-top: 2px solid $gray;
+// }
 
 ////////////////Members Section Desktop/////////////////////
+
+
+
 
 .members-container {
     flex-wrap: wrap;
@@ -709,21 +724,30 @@ header {
 #members,
 .message {
     grid-column: 1 / span 1;
-    width: 45vw;
-    border-right: 2px solid $gray;
+    //width: 45vw;
+     border-right: 2px solid $gray;
+    // border-bottom: 2px solid $gray;
+    border-bottom: none;
+
 }
+
+#members, .activity {
+    border-bottom: 2px solid $gray;
+}
+
 
 .activity,
 #settings {
     grid-column: 2 / span 1;
     //width: 25vw;
     //padding-left: 10px;
+    //border-left: 2px solid $gray;
 }
 
 
-#last-member {
-    border-bottom: none;
-}
+// #last-member {
+//     border-bottom: none;
+// }
 
 ////////////////Activity Section Desktop/////////////////////
 
@@ -748,9 +772,9 @@ header {
 
 ////////////////Message Section Desktop/////////////////////
 // //Long gray Dividing line
-#members,
-.activity,
-.message {
+// #members,
+// .activity,
+#message {
     border-bottom: none;
     margin-left: 0;
     margin-right: 0;
@@ -776,10 +800,23 @@ header {
 #messageField {
     height: 160px;
 }
+
+.message, #settings {
+    padding: 8px;
+}
 ////////////////Settings Section Desktop/////////////////////
+
+// #settings, .message {
+//     border-top: 2px solid gray;
+// }
+
 
 #box1 {
     margin-left: 9%;
+}
+
+#box1, #box2 {
+    margin-right: 34%;
 }
 
 .settings-button {
