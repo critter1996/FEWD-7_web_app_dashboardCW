@@ -155,6 +155,20 @@ main {
     padding: 5px;
 }
 
+// canvas {
+//     margin: auto;
+//     position: relative;
+// }
+
+#small-traffic {
+    display: block;
+}
+
+
+#big-traffic {
+    display: none;
+}
+
 #traffic h3 {
     font-size: 14px;
 }
@@ -416,6 +430,18 @@ main {
 
 }
 
+#small-traffic {
+    display: none;
+}
+
+#big-traffic {
+    display: block;
+    //align-self: flex-start;
+    margin-right: auto;
+    //padding-left: -19;
+}
+
+
 h3 {
     padding-left: 5px;
 }
@@ -449,15 +475,16 @@ h3 {
 }
 
 
-#traffic {
-    padding-left: 15px;
-}
+// #traffic {
+//     padding-left: 15px;
+// }
 
 .traffic-nav {
     //display: flex;
     //justify-content: space-around;
     justify-content: flex-end;
-    padding-right: 12px;
+    //padding-right: 12px;
+    padding-left: 0;
 }
 
 .traffic-nav ul {
@@ -468,11 +495,11 @@ h3 {
     align-self: flex-end;
 }
 
-#traffic h3 {
-    margin-bottom: 0;
-}
+// #traffic h3 {
+//     margin-bottom: 0;
+// }
 
-///////////SOCIAL SECTION/////////////////
+///////////SOCIAL SECTION TABLET/////////////////
 
 //All 3 social media boxes, no header
 .social-container-full {
@@ -511,7 +538,7 @@ h3 {
 
 
 
-/////////////LAYOUT SECTION//////////////////
+/////////////LAYOUT SECTION TABLET//////////////////
 
 
 //Top Traffic line graph (NOT daily), 
@@ -534,9 +561,11 @@ h3 {
 
 .widget-container-full {
     width: 90vw;
+    margin-left: auto;
 }
 .widget-container-half {
     width: 45vw;
+    margin: auto;
 }
 
 /////////////////New Members Tablet///////////////////////
@@ -619,6 +648,7 @@ h3 {
 footer {
     grid-area: footer;
 }
+
 }
 ////////////////END OF TABLET/////////////////////////
 
@@ -654,6 +684,8 @@ header {
  
 ///////////Dashboard-Desktop///////////////////
 
+
+
 .headline {
     margin-right: auto;
     padding-left: 22px;
@@ -672,7 +704,15 @@ header {
 }
 
 .daily {
-    width: 45vw;
+    width: 47vw;
+}
+
+.daily h3 {
+    padding-left: 10px;
+}
+
+.mobile h3 {
+    padding-left: 20px;
 }
 
 ////////////////Navigation Desktop//////////////////////////
@@ -697,6 +737,13 @@ header {
     padding-right: 57px;
 }
 
+#stats-section {
+    border-top: 2px solid $gray;
+}
+
+.daily, .mobile {
+    border-bottom: none;
+}
 
 ////////////////Members Section Desktop/////////////////////
 
