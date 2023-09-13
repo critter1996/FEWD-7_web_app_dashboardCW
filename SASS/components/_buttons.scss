@@ -6,50 +6,111 @@
     cursor: pointer;
 }
     
-//toggle buttons
-//input
+// //toggle buttons
+// //input
+// .toggle {
+//     -webkit-appearance: none;
+//     position: relative;
+//     //width: 50px;
+//     //left: 25%;
+//     width: 80px;
+//     height: 30px;
+//     border-radius: 25px;
+//     background-color: rgb(142, 24, 245);//#ccc;
+//     transition: background-color .3s;
+//     outline: none;
+//     cursor: pointer;
+// }
+
+
+// //input
+// .toggle::before {
+//     content: '';
+//     position: absolute;
+//     top: 15%; //50%;
+//     left: 70%; //75%;
+//     //transform: translate(-50%, -50%);
+//     border-radius: 50%;
+//     height: 1.25rem;
+//     width: 1.25rem;
+//     background-color: rgb(255, 255, 255);
+//     transition: left .3s;
+// }
+
+// // // //input
+// // .toggle:checked {
+// //     background-color: #ccc;//rgb(142, 24, 245);
+// // }
+
+// // // //input
+// .toggle::after {
+//     //content: 'ON';
+//     //left: 6%;//78%;//-25%; 
+//     //transform: translate(-50%, -50%);
+//     transition: left .3s;
+//     font-size: 1.3em;
+//     //background-color: #ccc;
+//     color: white;
+//     top: 10%;
+//     left: 0%;
+// }
+
+////////////////////////////////////////////////////
+
 .toggle {
     -webkit-appearance: none;
     position: relative;
     //width: 50px;
     //left: 25%;
     width: 80px;
-    height: 30px;
+    height: 38px;
     border-radius: 25px;
-    background-color: rgb(142, 24, 245);//#ccc;
+    background-color: #ccc;
     transition: background-color .3s;
     outline: none;
     cursor: pointer;
+    color: white;
 }
 
+.toggle:checked {
+  background-color: rgb(142, 24, 245)//#ccc;
+}
 
-//input
-.toggle::before {
+.toggle::after,
+.toggle:checked::after {
     content: '';
+    
+}
+
+.toggle::after,
+.toggle:checked::before {
     position: absolute;
-    top: 15%; //50%;
-    left: 70%; //75%;
-    //transform: translate(-50%, -50%);
-    border-radius: 50%;
-    height: 1.25rem;
-    width: 1.25rem;
-    background-color: rgb(255, 255, 255);
-    transition: left .3s;
 }
 
-// // //input
-// .toggle:checked {
-//     background-color: #ccc;//rgb(142, 24, 245);
-// }
-
-// // //input
 .toggle::after {
-    left: 6%;//78%;//-25%; 
+    top: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    background-color: white;
     transition: left .3s;
 }
 
+.toggle:checked::before {
+    content: 'ON';
+    top: 7px;
+    left: 11px;
+    font-size: 1.3em;
+}
 
+.toggle:checked::after {
+    left: 80%;
+    //background-color: #ddd;
+}
+
+///////////////////////////////////////////////////
 
 //Save and Send
 .button-primary {

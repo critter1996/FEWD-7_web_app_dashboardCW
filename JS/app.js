@@ -468,6 +468,26 @@ searchInput.addEventListener('keyup', e => {
 
 
 
+//event listener chacking for keypresses inside of search results list
+// user.addEventListener('keydown', (e) => {
+//     let pressed = document.pressed;
+
+    // //when user presses Enter on focused item, the value will store in the input field
+    // if (e.key === 'Enter') {
+    //     input.value = e.target.innerText;
+    //     searchContainer.classList.remove('expanded');
+    //     dropdownContainer.classList.remove('show');
+    // }
+
+
+
+
+
+
+
+
+
+
 
 
 //4. Use local storage to save the settings.
