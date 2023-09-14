@@ -629,11 +629,19 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    //width: 108px;
 }
 
 // #toggle input {
 //     margin-right: ;
 // }
+
+// .toggle::after {
+//     width: 108px;
+
+// }
+
+
 
 #box1, #box2 {
     margin-right: 50%;
@@ -832,7 +840,8 @@ header {
 }
 
 #box1, #box2 {
-    margin-right: 34%;
+    //margin-right: 34%;
+    margin-right: 26%;
 }
 
 .settings-button {

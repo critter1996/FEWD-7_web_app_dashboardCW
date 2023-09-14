@@ -230,7 +230,7 @@ h3 { font-size: 16px; }
   #messageField { height: 160px; }
   .message, #settings { padding: 8px; }
   #box1 { margin-left: 9%; }
-  #box1, #box2 { margin-right: 34%; }
+  #box1, #box2 { margin-right: 26%; }
   .settings-button { display: flex; justify-content: space-between; width: 40vw; }
   #settings h3, #check1, #check2, #timezone { margin-bottom: 25px; }
   #save, #cancel { width: 60%; }
@@ -238,7 +238,7 @@ h3 { font-size: 16px; }
 
 .toggle, .button-primary, #timezone #cancel { cursor: pointer; }
 
-.toggle { -webkit-appearance: none; position: relative; width: 80px; height: 38px; border-radius: 25px; background-color: #ccc; transition: background-color .3s; outline: none; cursor: pointer; color: white; }
+.toggle { -webkit-appearance: none; position: relative; width: 100px; height: 38px; border-radius: 25px; background-color: #ccc; transition: background-color .3s; outline: none; cursor: pointer; color: white; }
 
 .toggle:checked { background-color: #8e18f5; }
 
