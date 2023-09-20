@@ -410,8 +410,15 @@ let newChart = new Chart(
 //3. Add an "autocomplete" feature for the "Search for User" box, listing names that match the search term.
 
 
+{/* <li> search result items into an array and then 
+    attaching an event listener to each that would fill the user’s name into the input! */}
 
-const userData = [
+// const searchContainer = document.getElementById('searchContainer');
+// const searchInput = document.getElementById('userField');
+// const dropdownContainer = document.getElementById('dropdownContainer');
+// const dropdown = document.getElementById('dropdown');
+
+ const userData = [
     {
         uid: 1,
         name: 'Victoria Chambers',
@@ -439,7 +446,6 @@ const userData = [
 ];
 
 
-
 searchInput.addEventListener('keyup', e => {
     let value = e.target.value.toLowerCase();
     if (value !== '') {
@@ -447,7 +453,7 @@ searchInput.addEventListener('keyup', e => {
         dropdownContainer.classList.add('show');
         dropdown.innerHTML = '';
         userData.forEach(user => {
-            if (user.name.toLowerCase().includes(value)) {
+            if (user.name.toLowerCase().includes(value.toLowerCase())) {
                 dropdown.innerHTML += 
                 `
                 <li>
@@ -467,19 +473,18 @@ searchInput.addEventListener('keyup', e => {
 });
 
 
+let results = document.querySelectorAll('#dropdown li');
+let resultsArray = [];
 
-//event listener chacking for keypresses inside of search results list
-// user.addEventListener('keydown', (e) => {
-//     let pressed = document.pressed;
-
-    // //when user presses Enter on focused item, the value will store in the input field
-    // if (e.key === 'Enter') {
-    //     input.value = e.target.innerText;
-    //     searchContainer.classList.remove('expanded');
-    //     dropdownContainer.classList.remove('show');
-    // }
-
-
+results.addEventListener('click', () => {
+    //Add it to innerHTML
+    //Add it to searchInput
+    for (let i = 0; i < results.length; i++) {
+            searchInput.value = this.innerHTML;
+            results.push(resultsArray[i]);
+            
+        };
+    })
 
 
 
