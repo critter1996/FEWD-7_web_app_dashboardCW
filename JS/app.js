@@ -466,6 +466,26 @@ searchInput.addEventListener('keyup', e => {
                 `;
             }
         });
+
+
+        dropdown.addEventListener("click", (e) => {
+            const li = e.target.closest('li');
+            const name = li.lastElementChild.firstElementChild.textContent;
+            let nameArray = [];
+
+            if (e.target === name) {
+                //then add it to innerHTML
+                searchInput.value = this.innerHTML;
+                name.push(name[i]);
+                console.log(name);
+
+                searchContainer.classList.remove('expanded');
+                dropdownContainer.classList.remove('show');
+            }
+           
+        });
+
+
     } else {
         searchContainer.classList.remove('expanded');
         dropdownContainer.classList.remove('show');
@@ -473,18 +493,18 @@ searchInput.addEventListener('keyup', e => {
 });
 
 
-let results = document.querySelectorAll('#dropdown li');
-let resultsArray = [];
+// let results = document.querySelectorAll('#dropdown li');
+// let resultsArray = [];
 
-results.addEventListener('click', () => {
-    //Add it to innerHTML
-    //Add it to searchInput
-    for (let i = 0; i < results.length; i++) {
-            searchInput.value = this.innerHTML;
-            results.push(resultsArray[i]);
+// results.addEventListener('click', () => {
+//     //Add it to innerHTML
+//     //Add it to searchInput
+//     for (let i = 0; i < results.length; i++) {
+//             searchInput.value = this.innerHTML;
+//             results.push(resultsArray[i]);
             
-        };
-    })
+//         };
+//     })
 
 
 
