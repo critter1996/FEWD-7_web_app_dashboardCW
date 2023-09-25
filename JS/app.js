@@ -473,10 +473,10 @@ searchInput.addEventListener('keyup', e => {
             const name = li.lastElementChild.firstElementChild.textContent;
             let nameArray = [];
 
-            if (e.target.tagName === 'li') {
+            if (e.target === name) {
                 //then add it to innerHTML
                 searchInput.value = e.target.innerText;
-                name.push(name[i]);
+                //name.push(name[i]);
                 console.log(name);
 
                 searchContainer.classList.remove('expanded');
