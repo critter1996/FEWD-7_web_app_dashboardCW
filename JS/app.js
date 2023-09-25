@@ -46,7 +46,7 @@ alertBanner.addEventListener("click", e => {
 
 
 //////////////////////////////Charts////////////////////////
-
+//Alternative Code for Line Graph
 
 //First chart (traffic) Line Graph
 
@@ -409,15 +409,6 @@ let newChart = new Chart(
 
 //3. Add an "autocomplete" feature for the "Search for User" box, listing names that match the search term.
 
-
-{/* <li> search result items into an array and then 
-    attaching an event listener to each that would fill the user’s name into the input! */}
-
-// const searchContainer = document.getElementById('searchContainer');
-// const searchInput = document.getElementById('userField');
-// const dropdownContainer = document.getElementById('dropdownContainer');
-// const dropdown = document.getElementById('dropdown');
-
  const userData = [
     {
         uid: 1,
@@ -484,27 +475,6 @@ searchInput.addEventListener('keyup', e => {
         dropdownContainer.classList.remove('show');
     }
 });
-
-
-// let results = document.querySelectorAll('#dropdown li');
-// let resultsArray = [];
-
-// results.addEventListener('click', () => {
-//     //Add it to innerHTML
-//     //Add it to searchInput
-//     for (let i = 0; i < results.length; i++) {
-//             searchInput.value = this.innerHTML;
-//             results.push(resultsArray[i]);
-            
-//         };
-//     })
-
-
-
-
-
-
-
 
 
 
