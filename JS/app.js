@@ -471,19 +471,12 @@ searchInput.addEventListener('keyup', e => {
         dropdown.addEventListener("click", (e) => {
             const li = e.target.closest('li');
             const name = li.lastElementChild.firstElementChild.textContent;
-            let nameArray = [];
 
-            if (e.target === name) {
                 //then add it to innerHTML
                 searchInput.value = e.target.innerText;
-                //name.push(name[i]);
-                console.log(name);
-
                 searchContainer.classList.remove('expanded');
                 dropdownContainer.classList.remove('show');
-            }
-           
-        });
+            });
 
 
     } else {
