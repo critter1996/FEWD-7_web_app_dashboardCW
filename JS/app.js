@@ -534,7 +534,24 @@ saveBtn.addEventListener('click', () => {
 
 
 
-
+// CHART BUTTON ACTIVE FUNCTIONALITY
+let chartOpts = Array.from(document.getElementsByClassName('traffic-button'));
+function setValues(optClicked) {
+    chartOpts.forEach((opt) => {
+        let optValue = opt.firstElementChild.innerHTML;
+        if (optValue === optClicked) {
+            opt.setAttribute('flagged', 'active');
+        } else {
+            opt.setAttribute('flagged', 'inactive');
+        }
+    });
+};
+chartOpts.forEach((opt) => {
+    opt.addEventListener('click', (e) => {
+        let eventValue = e.target.innerHTML;
+        setValues(eventValue);
+    });
+});
 
 
 

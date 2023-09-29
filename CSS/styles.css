@@ -283,3 +283,5 @@ h3 { font-size: 16px; }
 .traffic-button { border: none; padding: 10px; background-color: white; font-size: 14px; font-weight: 800; }
 
 .traffic-button:focus, .traffic-button:hover { border-radius: 20px; color: #fff; background-color: #40cfa0; cursor: pointer; }
+
+button[flagged="active"] { border-radius: 20px; color: #fff; background-color: #40cfa0; cursor: pointer; }
