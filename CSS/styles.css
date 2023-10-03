@@ -13,7 +13,7 @@ ul { list-style-type: none; }
 
 :root { --primary: #F0B37B; --bg: #252935; --text: #354650; --gray-dark: #D9D9D9; --gray-light: #F4F4F4; --white: #FFFFFF; --box-shadow: 0px 0px 12px 7px rgba(240, 179, 123, 0.3); }
 
-.search-container { background-color: #fff; position: relative; padding: .5rem; display: flex; align-items: center; border-radius: .5rem; }
+.search-container { background-color: #fff; position: relative; border-radius: .5rem; }
 
 .search-container.expanded { border-radius: .5rem .5rem 0 0; }
 
@@ -43,7 +43,7 @@ ul { list-style-type: none; }
 
 .social-image { width: 23%; height: auto; padding: 10px; background-color: #8d5eea; fill: whitesmoke; margin: 18px; border-radius: 50%; }
 
-.nav-icon { width: 40%; height: auto; fill: whitesmoke; margin-left: 40%; margin-right: 40%; }
+.nav-icon { width: 40%; height: auto; fill: whitesmoke; margin: auto; }
 
 .widget-container-full, .widget-container-half { width: 95vw; }
 
@@ -89,7 +89,9 @@ header { grid-area: header; display: flex; justify-content: space-between; backg
 
 .alert-banner-close { display: flex; cursor: pointer; flex-wrap: wrap; justify-content: center; padding-right: 8px; }
 
-nav { grid-area: navigation; display: flex; justify-content: space-between; background-color: rgba(80, 30, 137, 0.989); padding: 10px; }
+nav { grid-area: navigation; background-color: rgba(80, 30, 137, 0.989); padding: 10px; }
+
+.nav-wrapper { display: flex; justify-content: space-around; align-items: center; }
 
 main { grid-area: main; display: grid; grid-template-rows: auto; padding: 5px; }
 
@@ -131,17 +133,17 @@ h3 { font-size: 16px; }
 
 .arrow { display: none; }
 
-.message, #settings { padding-top: 10px; padding-bottom: 20px; margin-left: 10px; }
+.message-container { display: flex; flex-direction: column; }
 
-#userField, #messageField { background-color: rgba(206, 205, 205, 0.329); margin-top: 10px; margin-bottom: 10px; padding: 20px; border-radius: 10px; border: 2px #c1bfbf solid; width: 90%; }
+#userField, #messageField { background-color: rgba(206, 205, 205, 0.329); border-radius: 10px; border: 2px #c1bfbf solid; width: 90%; padding: 10px; margin-bottom: 10px; margin-left: 15px; }
 
 #userField { margin-top: 10px; }
 
 #messageField { height: 180px; margin-top: 10px; }
 
-#send { width: 90%; }
+#send { width: 90%; align-self: center; }
 
-#settings { margin-left: 10px; }
+#settings { margin-left: 10px; padding-top: 10px; padding-bottom: 20px; }
 
 #check1 { display: flex; padding-bottom: 10px; justify-content: space-between; }
 
@@ -165,11 +167,11 @@ h3 { font-size: 16px; }
   .notification-dot { top: -20px; left: 0px; }
   #top-info { gap: 15px; }
   nav { grid-area: navigation; display: grid; grid-template-columns: 1fr; grid-template-rows: .03fr .03fr .03fr .03fr; }
+  .nav-wrapper { flex-direction: column; }
   main { grid-template-columns: 50%; margin-top: 10px; }
   .main-header { display: flex; }
   #small-traffic { display: none; }
   #big-traffic { display: block; margin-right: auto; }
-  h3 { padding-left: 5px; }
   .headline { margin-top: 10px; font-size: 20px; padding: 10px; margin-right: 10px; }
   #tab { width: 80%; height: 60px; }
   .alert { grid-row: 1 / span 2; margin-top: 15px; }
@@ -190,12 +192,14 @@ h3 { font-size: 16px; }
   .widget-container-half { width: 45vw; margin: auto; }
   .members-text { display: flex; text-align: left; flex: 1; }
   .date { margin-left: auto; padding-right: 10px; }
-  .members-activity, .members-text, .members-container { display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 20px; text-align: right; padding-bottom: 10px; padding-left: 10px; }
+  .members-activity, .members-text, .members-container { display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 20px; text-align: right; padding-left: 10px; padding-top: 10px; }
+  .members-activity, .members-container { padding-bottom: 5px; }
   .members-activity p, .members-text { text-align: left; }
   .arrow { display: block; align-self: center; margin-left: auto; padding-right: 10px; font-size: 22px; }
+  .message-container { justify-content: center; width: 98%; }
   .search-container { padding: 0; }
   #userField, #messageField { width: 98%; }
-  #send { width: 98%; }
+  #send { width: 98%; margin-left: 13px; }
   #toggle { display: flex; flex-direction: row; justify-content: flex-start; }
   #box1, #box2 { margin-right: 50%; }
   #timezone { width: 98%; }
