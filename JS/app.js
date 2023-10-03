@@ -478,6 +478,23 @@ searchInput.addEventListener('keyup', e => {
 
 
 
+//On page load have toggles set "on"
+addEventListener("load", (e) => {
+    //1 setting on
+    //emailCheckbox.checked = true;
+    document.getElementById('box1').checked = true;
+    //2 setting on
+    //profileCheckbox.checked = true;
+    document.getElementById('box2').checked = true;
+
+
+
+
+    
+});
+
+
+
 //4. Use local storage to save the settings.
 // -The settings are saved to local storage when the "Save" button is clicked.
 // -The settings are reset when the "Cancel" button is clicked.
@@ -493,6 +510,9 @@ searchInput.addEventListener('keyup', e => {
   let emailSetting = localStorage.getItem('email');
   let profileSetting = localStorage.getItem('profile');
   let timezoneSetting = localStorage.getItem('timezone');
+
+
+
 
 
 //create the logic that will handle the appearance of the UI elements based on the above localstorage settings:
@@ -522,6 +542,8 @@ saveBtn.addEventListener('click', () => {
     if (timezoneOption !== 'Select a Timezone') {
       localStorage.setItem('timezone', timezoneOption);
     }
+     // Alert the user to notify that settings have been saved
+     alert('Settings Saved');
   });
 
 
@@ -531,6 +553,15 @@ saveBtn.addEventListener('click', () => {
     localStorage.removeItem('profile');
     localStorage.removeItem('timezone');
   });
+
+
+
+
+
+
+
+
+
 
 
 
