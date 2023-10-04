@@ -478,20 +478,20 @@ searchInput.addEventListener('keyup', e => {
 
 
 
-//On page load have toggles set "on"
-addEventListener("load", (e) => {
-    //1 setting on
-    //emailCheckbox.checked = true;
-    document.getElementById('box1').checked = true;
-    //2 setting on
-    //profileCheckbox.checked = true;
-    document.getElementById('box2').checked = true;
+// //On page load have toggles set "on"
+// addEventListener("load", (e) => {
+//     //1 setting on
+//     //emailCheckbox.checked = true;
+//     document.getElementById('box1').checked = true;
+//     //2 setting on
+//     //profileCheckbox.checked = true;
+//     document.getElementById('box2').checked = true;
 
 
 
 
     
-});
+// });
 
 
 
@@ -516,9 +516,29 @@ addEventListener("load", (e) => {
 
 
 //create the logic that will handle the appearance of the UI elements based on the above localstorage settings:
-    emailCheckbox.checked = emailSetting === 'on';
-    profileCheckbox.checked = profileSetting === 'on';
-        if (timezoneSetting) {
+    
+//////////////////////////
+//check if the toggle button has it’s setting saved, then it should use the saved setting. 
+//Else, set the toggle to true
+
+
+ ///////////////////////////////////////////////
+
+
+
+    if (emailSetting === 'off') {
+        emailCheckbox.checked = false;
+    } else {
+        emailCheckbox.checked = true;
+    }
+
+    if (profileSetting === 'off') {
+        profileCheckbox.checked = false;
+    } else {
+        profileCheckbox.checked = true;
+    }
+
+    if (timezoneSetting) {
         const index = Array.from(timezone.options).findIndex(
         option => option.value === timezoneSetting
         );
@@ -537,6 +557,9 @@ const cancelBtn = document.getElementById('cancel');
 
 saveBtn.addEventListener('click', () => {
     const timezoneOption = timezone[timezone.selectedIndex].textContent;
+
+
+
     localStorage.setItem('email', emailCheckbox.checked ? 'on' : 'off');
     localStorage.setItem('profile', profileCheckbox.checked ? 'on' : 'off');
     if (timezoneOption !== 'Select a Timezone') {
@@ -548,10 +571,13 @@ saveBtn.addEventListener('click', () => {
 
 
 
+
   cancelBtn.addEventListener('click', () => {
     localStorage.removeItem('email');
     localStorage.removeItem('profile');
     localStorage.removeItem('timezone');
+
+    alert('Settings Reset, Please refresh page');
   });
 
 
